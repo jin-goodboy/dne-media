@@ -1,0 +1,804 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>살라딘 — 한 쿠르드 청년이 술탄이 되기까지</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0d0a;--bg-soft:#1a1612;--paper:#f4ecd8;--paper-soft:#ebe1c6;--ink:#1a1612;--ink-soft:#3b322a;--gold:#c9a14a;--gold-dark:#8a6a26;--crimson:#7c1e1e;--rule:rgba(201,161,74,0.35);}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Noto Serif KR','Cormorant Garamond',serif;background:var(--paper);color:var(--ink);line-height:1.85;font-size:17px}
+.hero{position:relative;min-height:100vh;background:linear-gradient(180deg,rgba(15,13,10,0.6),rgba(15,13,10,0.85)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Saladin_2.jpg/600px-Saladin_2.jpg') center/cover no-repeat;color:var(--paper);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:6rem 2rem 4rem}
+.hero .eyebrow{font-family:'Cormorant Garamond',serif;letter-spacing:0.5em;font-size:0.9rem;color:var(--gold);text-transform:uppercase;margin-bottom:1.2rem}
+.hero h1{font-weight:900;font-size:clamp(2.6rem,6vw,5.5rem);line-height:1.1;margin-bottom:1rem}
+.hero h1 .gilt{background:linear-gradient(180deg,#f6dca4,#c9a14a 60%,#8a6a26);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,2vw,1.6rem);color:#e8d9a8;max-width:48ch;margin:0 auto 2rem}
+.hero .meta{display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;font-size:0.95rem;color:#cdbf95;border-top:1px solid rgba(201,161,74,0.4);border-bottom:1px solid rgba(201,161,74,0.4);padding:1rem 2rem;margin-top:1rem}
+.hero .meta b{color:var(--gold);font-weight:600;letter-spacing:0.1em;display:block;font-size:0.75rem;text-transform:uppercase;margin-bottom:0.2rem}
+main{max-width:980px;margin:0 auto;padding:5rem 1.5rem}
+.chapter{margin:0 0 6rem;scroll-margin-top:2rem}
+.chapter-head{display:flex;align-items:baseline;gap:1.5rem;border-bottom:2px solid var(--gold-dark);padding-bottom:1.2rem;margin-bottom:2.5rem}
+.chapter-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:600;color:var(--gold);flex-shrink:0;line-height:1}
+.chapter-title .when{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--crimson);font-size:1rem;letter-spacing:0.1em;margin-bottom:0.3rem}
+.chapter-title h2{font-weight:700;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--ink)}
+.lead{font-size:1.1rem;color:var(--ink-soft);margin-bottom:2rem;padding-left:1.2rem;border-left:3px solid var(--gold);font-style:italic}
+p{margin-bottom:1.3rem;color:var(--ink-soft)}p strong{color:var(--ink);font-weight:600}
+.dropcap::first-letter{font-family:'Cormorant Garamond',serif;float:left;font-size:4.5rem;line-height:0.85;padding:0.35rem 0.6rem 0 0;color:var(--crimson);font-weight:600}
+blockquote{margin:3rem 0;padding:1.5rem 2rem;border-left:4px solid var(--crimson);background:var(--paper-soft);font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--ink);position:relative}
+blockquote::before{content:'\201C';position:absolute;top:-1rem;left:0.8rem;font-size:4rem;color:var(--gold);line-height:1}
+blockquote cite{display:block;margin-top:0.8rem;font-size:0.9rem;font-style:normal;color:var(--gold-dark)}
+blockquote cite::before{content:'— '}
+.world-context{background:linear-gradient(135deg,#2a2218,#1a1410);color:var(--paper);padding:1.8rem 2rem;margin:2.5rem 0;border-left:5px solid var(--crimson);position:relative;font-size:0.96rem}
+.world-context::before{content:'※ 같은 시간, 세계의 다른 곳에서는';position:absolute;top:-0.7rem;left:1.5rem;background:var(--crimson);color:var(--paper);padding:0.2rem 1rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.85rem;letter-spacing:0.1em}
+.world-context h5{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:0.82rem;text-transform:uppercase;margin:0.8rem 0 0.3rem}
+.world-context p{color:#cdbf95;margin-bottom:0.6rem;line-height:1.75}.world-context b{color:var(--paper)}
+.aside-story{border-top:1px dashed var(--gold-dark);border-bottom:1px dashed var(--gold-dark);padding:1.3rem 1.5rem;margin:2rem 0;background:rgba(201,161,74,0.06);font-size:0.97rem}
+.aside-story h5{font-family:'Cormorant Garamond',serif;color:var(--crimson);font-style:italic;font-size:1rem;margin-bottom:0.6rem}
+.toc{background:var(--bg-soft);color:var(--paper);padding:4rem 1.5rem}
+.toc-inner{max-width:900px;margin:0 auto}
+.toc h3{font-family:'Cormorant Garamond',serif;text-align:center;color:var(--gold);font-size:1rem;letter-spacing:0.4em;text-transform:uppercase;margin-bottom:0.5rem}
+.toc h2{text-align:center;font-weight:600;color:var(--paper);margin-bottom:3rem;font-size:1.6rem}
+.timeline{position:relative;padding-left:2rem;border-left:2px solid var(--gold-dark)}
+.timeline li{list-style:none;padding:0.6rem 0 0.6rem 1.5rem;position:relative}
+.timeline li::before{content:'';position:absolute;left:-2.5rem;top:1.2rem;width:0.9rem;height:0.9rem;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--bg-soft)}
+.timeline a{color:var(--paper);text-decoration:none;display:block}.timeline a:hover{color:var(--gold)}
+.timeline .yr{font-family:'Cormorant Garamond',serif;color:var(--crimson);font-style:italic;font-size:0.9rem;display:block}
+.timeline .tt{font-weight:600;font-size:1.05rem}
+.epilogue{background:var(--bg);color:var(--paper);padding:6rem 1.5rem;text-align:center}
+.epilogue h2{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--gold);margin-bottom:1.5rem;font-weight:500}
+.epilogue p{max-width:60ch;margin:0 auto 1.3rem;color:#cdbf95;font-size:1.05rem}
+.sources{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--gold-dark);font-size:0.85rem;color:#9a8d68;max-width:60ch;margin-left:auto;margin-right:auto}
+.sources b{color:var(--gold);display:block;letter-spacing:0.2em;margin-bottom:0.5rem;font-size:0.75rem}
+.chapter-audio{margin:0 0 2.2rem;padding:0.7rem 0.9rem 0.8rem;background:linear-gradient(135deg,var(--paper-soft),rgba(201,161,74,0.08));border:1px solid rgba(138,106,38,0.3);border-left:3px solid var(--gold-dark);display:flex;align-items:center;gap:0.9rem}
+.chapter-audio .audio-label{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-dark);font-size:0.82rem;letter-spacing:0.18em;text-transform:uppercase;flex-shrink:0;font-weight:600}
+.chapter-audio audio{flex:1;height:36px;width:100%;min-width:0}
+@media(max-width:720px){main{padding:3rem 1.2rem}.chapter-head{flex-direction:column;gap:0.4rem}.chapter-num{font-size:3rem}}
+/* ===== 보강 공용 CSS: 본문 도판 · 시간대 지도 · 가로 스크롤 방지 (self-contained) ===== */
+html,body{overflow-x:hidden;max-width:100%}
+img{max-width:100%;height:auto}
+main figure{margin:2.6rem 0}
+main figure img{width:100%;height:auto;display:block;border:1px solid rgba(0,0,0,0.15);box-shadow:0 8px 30px rgba(0,0,0,0.22);background:#ebe1c6}
+main figure.portrait{max-width:66%;margin-left:auto;margin-right:auto}
+main figure.wide{margin-left:0;margin-right:0}
+main figcaption{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.95rem;text-align:center;color:#6b5d44;margin-top:0.8rem;padding:0 1rem;line-height:1.6}
+main figcaption b{font-style:normal;color:#8a6a26;font-weight:600}
+.src{font-size:0.8rem;color:#8a7a52;margin-top:0.6rem;font-style:italic}
+.factbox{background:#ebe1c6;border:1px solid #c9a14a;padding:1.4rem 1.7rem;margin:2.4rem 0;font-size:0.95rem}
+.factbox h4{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.25em;color:#7c1e1e;text-transform:uppercase;margin-bottom:0.8rem;border-bottom:1px solid rgba(201,161,74,0.35);padding-bottom:0.5rem}
+.factbox ul{list-style:none;padding:0;margin:0}
+.factbox li{padding:0.32rem 0;display:flex;gap:0.8rem}
+.factbox li b{flex-shrink:0;min-width:7em;color:#8a6a26}
+/* 시간대 지도 */
+.campaign-map{margin:4.5rem auto;max-width:980px;padding:0 1.5rem}
+.campaign-map .map-head{text-align:center;margin-bottom:1.2rem}
+.campaign-map .map-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:#8a6a26;letter-spacing:0.05em}
+.campaign-map .map-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;color:#3b322a;margin-top:0.2rem}
+.campaign-map svg,.campaign-svg{width:100%;height:auto;display:block;border:1px solid rgba(201,161,74,0.35);background:#0f1a24}
+.campaign-map .map-legend{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:center;margin-top:1rem;font-size:0.82rem;color:#3b322a}
+.campaign-map .map-legend i{display:inline-block;width:1.1rem;height:0.7rem;margin-right:0.35rem;vertical-align:middle;border:1px solid rgba(0,0,0,0.2)}
+.lg-conquered{background:rgba(201,161,74,0.30)}
+.lg-start{background:rgba(90,107,58,0.45)}
+.lg-farthest{background:rgba(124,30,30,0.30)}
+.lg-persia{background:rgba(60,110,165,0.30)}
+.lg-other{background:rgba(150,150,150,0.25)}
+.lg-route{background:transparent;border:0;border-top:2px dashed #7c1e1e;height:0;width:1.4rem;margin-bottom:0.2rem}
+.lg-battle{background:transparent;border:0;width:auto}
+.lg-battle::before{content:'\2297';color:#7c1e1e;font-size:1rem}
+.campaign-map .map-caption{max-width:72ch;margin:1.2rem auto 0;text-align:center;font-style:italic;color:#3b322a;font-size:0.95rem}
+.sea{fill:#13212e}
+.other-realm{fill:rgba(180,180,180,0.18);stroke:rgba(180,180,180,0.3);stroke-width:1}
+.conquered{fill:rgba(201,161,74,0.20);stroke:#8a6a26;stroke-width:1}
+.macedonia-start{fill:rgba(90,107,58,0.40);stroke:#5a6b3a;stroke-width:1}
+.farthest{fill:rgba(124,30,30,0.22);stroke:#7c1e1e;stroke-width:1}
+.persia-territory{fill:rgba(60,110,165,0.22);stroke:#3b6ea5;stroke-width:1}
+.route{fill:none;stroke:#7c1e1e;stroke-width:2.5;stroke-dasharray:7 5;opacity:0.9}
+.route-naval{fill:none;stroke:#1e4a7c;stroke-width:2;stroke-dasharray:3 4}
+.city{fill:#f4ecd8}
+.capital{fill:#c9a14a}
+.city-label{font-family:'Cormorant Garamond',serif;font-size:12px;fill:#f4ecd8;opacity:0.9}
+.city-label-kr{font-family:'Noto Serif KR',serif;font-size:11px;fill:#c9a14a;opacity:0.9}
+.region-label{font-family:'Cormorant Garamond',serif;font-size:20px;fill:rgba(244,236,216,0.16);letter-spacing:3px;font-weight:600}
+.sea-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;fill:rgba(120,170,200,0.5);letter-spacing:2px}
+.neighbor-label{font-family:'Cormorant Garamond',serif;font-size:13px;fill:rgba(201,161,74,0.55);letter-spacing:1px}
+.neighbor-label-en{font-family:'Noto Serif KR',serif;font-size:10px;fill:rgba(201,161,74,0.45)}
+.battle-x{font-size:16px;fill:#7c1e1e;font-weight:700}
+.battle-ring{fill:none;stroke:#7c1e1e;stroke-width:1.5}
+.year-marker{font-family:'Cormorant Garamond',serif;font-size:12px;fill:#e8d9a8;font-style:italic}
+@media(max-width:720px){.campaign-map{padding:0 1rem}main figure.portrait{max-width:100%}.region-label{font-size:15px}}
+
+  /* === campaign-map 지도 CSS (알렉산더_대왕에서 이식) === */
+.campaign-map{
+    margin:3.5rem -2rem;
+    background:linear-gradient(135deg,#f0e4c4 0%, #e6d9b3 100%);
+    border-top:1px solid var(--gold-dark);
+    border-bottom:1px solid var(--gold-dark);
+    padding:2.2rem 1.5rem 1.5rem;
+    position:relative;
+  }
+  .campaign-map::before{
+    content:'Tabula Itineris';
+    position:absolute;top:-0.7rem;left:50%;transform:translateX(-50%);
+    background:var(--paper);
+    color:var(--gold-dark);
+    padding:0.2rem 1.2rem;
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;font-size:0.82rem;
+    letter-spacing:0.25em;
+    border:1px solid var(--gold-dark);
+  }
+  .campaign-map .map-title{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:1.15rem;
+    letter-spacing:0.1em;
+    color:var(--crimson);
+    text-align:center;
+    margin-bottom:0.3rem;
+  }
+  .campaign-map .map-subtitle{
+    font-family:'Noto Serif KR',serif;
+    font-size:0.95rem;
+    color:var(--ink-soft);
+    text-align:center;
+    margin-bottom:1.2rem;
+    font-style:normal;
+  }
+  .campaign-map svg{
+    width:100%;height:auto;display:block;
+    max-width:1100px;margin:0 auto;
+    background:#efe2bf;
+    border:1px solid rgba(138,106,38,0.35);
+  }
+  .campaign-map .map-legend{
+    display:flex;flex-wrap:wrap;
+    gap:0.5rem 1.4rem;justify-content:center;
+    margin-top:1rem;padding-top:0.8rem;
+    border-top:1px dashed var(--rule);
+    font-size:0.85rem;color:var(--ink-soft);
+  }
+  .campaign-map .legend-item{
+    display:inline-flex;align-items:center;gap:0.45rem;
+  }
+  .campaign-map .legend-swatch{
+    display:inline-block;width:18px;height:12px;
+    border:1px solid rgba(0,0,0,0.18);
+  }
+  .campaign-map .legend-line{
+    display:inline-block;width:28px;height:0;
+    border-top:2.5px dashed var(--crimson);
+  }
+  .campaign-map .legend-line.naval{
+    border-top:2px dashed #1e4a7c;
+  }
+  .campaign-map .map-caption{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:0.92rem;text-align:center;
+    color:#6b5d44;margin-top:1rem;padding:0 1rem;
+    line-height:1.55;max-width:60ch;
+    margin-left:auto;margin-right:auto;
+  }
+  .campaign-map .map-caption b{
+    font-style:normal;color:var(--gold-dark);font-weight:600;
+  }
+
+  /* SVG class hooks */
+  .campaign-map .sea{fill:#a8bdc7;opacity:0.55}
+  .campaign-map .persia-territory{fill:#a35a3a;opacity:0.22}
+  .campaign-map .macedonia-start{fill:#5a6b3a;opacity:0.42}
+  .campaign-map .conquered{fill:#c9a14a;opacity:0.32}
+  .campaign-map .farthest{fill:#7c1e1e;opacity:0.18}
+  .campaign-map .other-realm{fill:#7c5a2e;opacity:0.20}
+  .campaign-map .route{
+    fill:none;stroke:#7c1e1e;stroke-width:2.8;
+    stroke-dasharray:9 5;stroke-linecap:round;stroke-linejoin:round;
+  }
+  .campaign-map .route-naval{
+    fill:none;stroke:#1e4a7c;stroke-width:2;
+    stroke-dasharray:3 4;stroke-linecap:round;
+  }
+  .campaign-map .city{fill:#1a1612}
+  .campaign-map .capital{fill:#7c1e1e;stroke:#1a1612;stroke-width:1}
+  .campaign-map .city-label{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;font-size:13px;
+    fill:#1a1612;
+  }
+  .campaign-map .city-label-kr{
+    font-family:'Noto Serif KR',serif;font-size:11px;
+    fill:#3b322a;font-style:normal;
+  }
+  .campaign-map .battle-x{
+    stroke:#7c1e1e;stroke-width:3;stroke-linecap:round;
+  }
+  .campaign-map .battle-ring{
+    fill:none;stroke:#7c1e1e;stroke-width:1.5;
+  }
+  .campaign-map .region-label{
+    font-family:'Cormorant Garamond',serif;
+    font-size:19px;fill:#6b5d44;
+    letter-spacing:0.18em;text-transform:uppercase;
+    font-weight:600;opacity:0.55;
+  }
+  .campaign-map .sea-label{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;font-size:14px;
+    fill:#2a4858;letter-spacing:0.1em;opacity:0.75;
+  }
+  .campaign-map .neighbor-label{
+    font-family:'Noto Serif KR',serif;
+    font-size:11.5px;fill:#7c5a2e;font-weight:600;
+  }
+  .campaign-map .neighbor-label-en{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;font-size:12px;
+    fill:#7c5a2e;
+  }
+  .campaign-map .year-marker{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;font-size:13px;
+    fill:#7c1e1e;font-weight:700;
+  }
+@media (max-width:720px){
+    .campaign-map{margin:2.5rem -0.8rem;padding:1.8rem 0.6rem 1rem}
+    .campaign-map .city-label{font-size:10px}
+    .campaign-map .city-label-kr{font-size:9px}
+    .campaign-map .region-label{font-size:13px}
+    .campaign-map .sea-label{font-size:11px}
+    .campaign-map .neighbor-label,
+    .campaign-map .neighbor-label-en{font-size:9.5px}
+    .campaign-map .year-marker{font-size:11px}
+}
+</style></head><body>
+
+<header class="hero">
+<div class="eyebrow">Ṣalāḥ al-Dīn Yūsuf ibn Ayyūb · 1137–1193 CE</div>
+<h1>살라<span class="gilt">딘</span></h1>
+<p class="subtitle">한 쿠르드 청년이 갈라진 이슬람 세계를 묶어 십자군에게서 예루살렘을 되찾기까지</p>
+<div class="meta">
+<div><b>생몰</b>AD 1137 – 1193.3.4</div>
+<div><b>가문</b>쿠르드족 아이유브 가</div>
+<div><b>왕조</b>아이유브 왕조 창건</div>
+<div><b>예루살렘</b>AD 1187.10.2 탈환</div>
+<div><b>안식처</b>다마스쿠스 우마이야 모스크</div>
+</div></header>
+
+<section class="toc"><div class="toc-inner"><h3>Cursus Vitae</h3><h2>한 쿠르드 술탄의 시간표</h2>
+<ol class="timeline">
+<li><a href="#ch1"><span class="yr">AD 1137</span><span class="tt">1. 티크리트 — 추방당하던 밤의 아이</span></a></li>
+<li><a href="#ch2"><span class="yr">AD 1164-1169</span><span class="tt">2. 나일강으로 — 청년 부관의 세 차례 원정</span></a></li>
+<li><a href="#ch3"><span class="yr">AD 1169-1171</span><span class="tt">3. 파티마의 종언, 아이유브의 새벽</span></a></li>
+<li><a href="#ch4"><span class="yr">AD 1174-1186</span><span class="tt">4. 시리아 통합 — 십이 년의 인내</span></a></li>
+<li><a href="#ch5"><span class="yr">AD 1187.7.4</span><span class="tt">5. 하틴의 뿔 — 갈증으로 무너진 왕국</span></a></li>
+<li><a href="#ch6"><span class="yr">AD 1187.10.2</span><span class="tt">6. 예루살렘 — 피 없이 받은 성도</span></a></li>
+<li><a href="#ch7"><span class="yr">AD 1189-1192</span><span class="tt">7. 리처드 사자심왕 — 만나지 않은 두 적수</span></a></li>
+<li><a href="#ch8"><span class="yr">AD 1193</span><span class="tt">8. 다마스쿠스의 마지막 일주일</span></a></li>
+<li><a href="#ch9"><span class="yr">Alia visione</span><span class="tt">9. 다른 시선 — 단테, 스콧, 그리고 후세의 거울</span></a></li>
+</ol></div></section>
+
+<main>
+
+<article class="chapter" id="ch1"><header class="chapter-head"><div class="chapter-num">I</div><div class="chapter-title"><div class="when">AD 1137년 · 티크리트, 티그리스 강변</div><h2>티크리트 — 추방당하던 밤의 아이</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch01_티크리트.mp3"></audio></div>
+<p class="lead">한 아이가 태어나던 그날 밤, 그 아버지는 다스리던 성을 떠나 가족을 수레에 싣고 길 위에 올랐다. 시작이 추방이었던 인생이 끝에 가서는 예루살렘의 문을 열게 된다.</p>
+
+<p class="dropcap">서기 1137년, 오늘날 이라크 북부 티그리스 강변의 요새 도시 티크리트에서 한 사내아이가 태어났다. 아랍어 이름은 <strong>유수프 이븐 아이유브</strong>, 곧 '아이유브의 아들 요셉'이라는 뜻이었다. 후세는 그를 본명이 아니라 명예 칭호로 기억한다. <strong>살라흐 알딘</strong>, '신앙의 의로움(Righteousness of the Faith)'. 우리 귀에 익은 살라딘이라는 발음은 이 칭호가 유럽의 라틴어와 프랑스어를 거쳐 굳어진 형태다. 그의 가문은 아랍인도, 튀르크인도, 페르시아인도 아니었다. 자그로스 산맥의 산악 민족, <strong>쿠르드족</strong>이었다. 정확히는 아르메니아 방면 드빈(Dvin) 출신의 라와디야(Rawādiya) 분파로 거슬러 올라간다. 한 민족의 변방에서, 또 그 변방의 다시 변방에서, 한 세계 제국의 술탄이 솟아오른 셈이다.</p>
+
+<p>전승은 그의 출생 밤을 한 편의 우화처럼 전한다. 아버지 <strong>나짐 알딘 아이유브</strong>는 셀주크 권력자 밑에서 티크리트 성을 맡아 다스리는 행정관이었다. 그런데 아들이 태어나던 바로 그 무렵, 아이유브와 그의 동생 <strong>시르쿠</strong>가 한 여인의 명예를 둘러싼 다툼 끝에 사람을 죽이는 사건에 휘말렸다. 두 형제는 그날로 티크리트에서 쫓겨났다. 갓난 살라딘은 짐 보따리에 실려 길을 떠났고, 가족은 모술을 거쳐 셀주크 장군 장기(Zangī)의 손길이 미치는 곳으로 향했다. 후대의 한 전기 작가는 이 우연의 일치를 두고 "신은 그 아이가 한 도시에 갇혀 있기를 원치 않으셨다"고 적었다. 사료에 따라 세부는 엇갈리지만, 그가 명문가의 안온한 요람이 아니라 추방자의 수레에서 인생을 시작했다는 큰 줄기는 일치한다.</p>
+
+<p>가족은 결국 시리아 북부의 발벡(Baalbek)과 다마스쿠스에 정착했다. 아버지 아이유브는 당대의 떠오르는 강자 <strong>누르 알딘</strong>(누레딘) 밑에서 다마스쿠스 총독에 오르고, 작은아버지 시르쿠는 그 군대의 맹장이 되었다. 살라딘은 이 다마스쿠스의 궁정 분위기 속에서 자랐다. 흥미롭게도 어린 그는 칼보다 책에 가까운 소년이었다. 그의 평생 동반자가 될 비서 <strong>바하 알딘 이븐 샤다드</strong>는 살라딘이 꾸란과 하디스, 아랍 시문, 명마의 혈통과 계보를 즐겨 외웠다고 전한다. 한 정복자의 출발점이 무인이 아니라 신학생에 가까웠다는 사실은, 그가 평생 보여줄 절제와 경건의 뿌리를 짐작하게 한다.</p>
+
+<p>그가 자라난 다마스쿠스는 당시 이슬람 세계에서 가장 활기찬 학문과 신앙의 도시 가운데 하나였다. 누르 알딘은 이 도시를 수니파 부흥의 중심으로 삼아 마드라사와 병원, 수피 수도장을 잇달아 세웠고, 곳곳에서 법학자와 설교가들이 십자군에 맞선 지하드의 의무를 설파했다. 소년 살라딘은 바로 이 분위기 속에서 신앙과 정의, 그리고 성전이라는 관념을 자연스럽게 호흡하며 자랐다. 훗날 그가 단순한 정복욕이 아니라 '예루살렘 탈환'이라는 종교적 사명을 평생의 기치로 내건 것은, 이 다마스쿠스의 교육 환경과 떼어 놓고 생각할 수 없다. 누르 알딘이 뿌린 지하드의 씨앗을, 그의 부하의 아들이 거두어 완성한 셈이다.</p>
+
+<figure class="portrait"><img src="images/Saladin_the_Victorious.jpg" alt="승리자 살라딘"><figcaption><b>승리자 살라딘(Saladin the Victorious)</b> · 귀스타브 도레의 십자군 판화 연작(19세기). 실제 동시대 초상은 남아 있지 않으며, 우리가 떠올리는 살라딘의 얼굴은 모두 후대의 상상이다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>그가 살아간 12세기 중반의 근동은 세 겹으로 갈라져 있었다. 첫째, 바그다드에는 명목상의 수니파 종주인 <strong>아바스 칼리프</strong>가 있었으나 실권은 셀주크 튀르크의 군벌들에게 넘어가 있었다. 둘째, 카이로에는 그와 대립하는 시아파 <strong>파티마 칼리프</strong>가 따로 한 세계를 이루고 있었다. 셋째, 지중해 동안에는 1차 십자군(1099)이 남긴 네 개의 <strong>십자군 국가</strong>, 곧 예루살렘 왕국·트리폴리 백국·안티오키아 공국·에데사 백국이 자리 잡고 있었다. 무슬림 세계는 종파와 군벌로 찢겨 있었고, 바로 그 분열이 십자군이 해안에 뿌리내린 가장 큰 이유였다. 살라딘의 평생 과업은 이 찢어진 직물을 다시 한 폭으로 짜는 일이 된다.</p>
+
+<p>쿠르드라는 출신은 그의 생애 내내 묘한 그림자를 드리웠다. 12세기 근동의 군사·정치 무대는 셀주크 이래 튀르크인이 압도적으로 장악하고 있었다. 아랍인은 종교적 권위를, 페르시아인은 행정과 문예의 전통을 쥐었으나, 쿠르드인은 대개 산악의 용병이거나 변경의 보조 병력으로 취급되었다. 그런 환경에서 한 쿠르드 가문이 이집트와 시리아를 아우르는 술탄국을 세웠다는 것은, 당대의 신분 질서를 거스르는 이례적인 도약이었다. 후대의 일부 사가들이 살라딘의 정통성을 깎아내리려 할 때 가장 먼저 들춘 것도 바로 이 '비(非)튀르크·비아랍' 혈통이었다. 그는 평생 출신의 약점을 경건과 정의, 그리고 지하드의 명분으로 메워야 했다.</p>
+
+<p>아버지 아이유브와 작은아버지 시르쿠 형제의 대조도 흥미롭다. 아이유브는 신중하고 외교적인 행정가였고, 시르쿠는 저돌적이고 거친 무장이었다. 어린 살라딘은 두 삼촌과 아버지 사이에서, 칼의 세계와 펜의 세계를 동시에 곁눈질하며 자랐다. 훗날 그가 보여 줄 면모 — 전장에서는 끈질긴 지휘관이면서 협상 자리에서는 인내심 깊은 외교가였던 그 이중성 — 의 뿌리가 이 가문 안에 이미 갖추어져 있었던 셈이다. 발벡과 다마스쿠스에서 보낸 소년기에 그는 아랍어 고전과 함께 군영의 실무를 익혔고, 이는 후일 그가 학자와 병사 양쪽의 언어를 모두 구사하는 통치자가 되는 밑거름이 되었다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 책을 사랑한 소년의 고백</h5>
+<p>바하 알딘은 살라딘이 훗날 자신의 젊은 시절을 회상하며 군인의 길은 처음부터 원한 것이 아니었다고 말했다고 전한다. 그는 신학과 학문에 마음이 더 기울어 있었고, 작은아버지 시르쿠가 그를 이집트 원정에 거의 떠밀다시피 데려갔다고 한다. 거대한 정복자가 자신의 출발을 '운명에 떠밀린 것'으로 회고했다는 이 기록은, 그가 권력을 천성으로 탐한 인물이 아니라 상황에 응답하며 커진 인물임을 보여 준다. 다만 이런 겸양의 회고는 군주의 미덕을 강조하려는 전기 특유의 윤색일 수 있어, 사료에 따라서는 그 진정성을 조심스럽게 본다.</p>
+<p class="src">[Source] 바하 알딘 이븐 샤다드, 『술탄의 행적에 관한 진귀한 기록(al-Nawādir al-Sulṭāniyya)』; A.-M. Eddé, *Saladin*(2008), 1–2장.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 두 정복자를 낳은 한 도시</h5>
+<p>티크리트는 20세기에 또 한 명의 '티크리트의 아들'을 세상에 내놓았다. 1937년, 살라딘 출생으로부터 정확히 팔백 년 뒤에 태어난 사담 후세인이다. 사담은 평생 이 우연을 정치적으로 활용해, 자신을 살라딘의 후예이자 재현으로 선전했다. 그러나 한 가지는 분명히 짚어야 한다. 살라딘은 쿠르드족이었고, 사담은 바로 그 쿠르드족을 가장 가혹하게 탄압한 통치자였다. 같은 도시, 정반대의 유산이다. 이 아이러니는 마지막 장에서 다시 다룬다.</p>
+<p class="src">[Source] S. Lane-Poole, *Saladin and the Fall of the Kingdom of Jerusalem*(1898); 현대 이라크 정치사 일반.</p></div>
+
+<div class="factbox"><h4>한눈에 보는 살라딘</h4>
+<ul>
+<li><b>본명</b>유수프 이븐 아이유브 (Yūsuf ibn Ayyūb)</li>
+<li><b>칭호</b>살라흐 알딘 = '신앙의 의로움'</li>
+<li><b>민족</b>쿠르드족 (라와디야 분파, 드빈 출신)</li>
+<li><b>출생지</b>티크리트 (오늘날 이라크 살라딘 주)</li>
+<li><b>종파</b>수니파 (샤피이 법학파)</li>
+<li><b>최종 칭호</b>이집트·시리아의 술탄</li>
+</ul></div>
+
+<div class="world-context"><h5>유럽</h5><p>제2차 십자군(1147–1149)이 다마스쿠스 공략에 실패하며 막을 내린 직후의 세대. 십자군 국가들은 해안에 굳어졌으나 내륙으로는 더 나아가지 못한 채 무슬림의 재결집을 두려워하기 시작했다.</p>
+<h5>동아시아</h5><p>중국에서는 남송과 여진의 금나라가 회수를 경계로 대치했다. 한반도 고려는 인종 시대, 1135년 묘청의 서경 천도 운동이 김부식에게 진압된 직후였다. 일본은 헤이안 말기, 무사 가문이 조정 위로 떠오르던 보겐의 난 전야였다.</p></div>
+</article>
+
+<section class="campaign-map" aria-labelledby="map1-title">
+<div class="map-head"><h3 class="map-title" id="map1-title">Tabula I · 나일강을 향하여</h3><p class="map-subtitle">이집트 장악 1164–1171 — 다마스쿠스에서 카이로까지</p></div>
+<svg viewBox="0 0 920 680" xmlns="http://www.w3.org/2000/svg" class="campaign-svg" role="img" aria-label="살라딘의 이집트 원정 경로 지도">
+<rect class="sea" x="0" y="0" width="920" height="680"/>
+<text class="sea-label" x="300" y="120">MARE MEDITERRANEVM</text>
+<text class="sea-label" x="640" y="470">MARE RVBRVM</text>
+<!-- 육지 영역 -->
+<path class="other-realm" d="M0,200 L260,170 L380,210 L470,180 L560,210 L700,180 L920,210 L920,680 L640,680 L600,520 L540,440 L470,430 L420,520 L300,560 L120,540 L0,500 Z"/>
+<path class="persia-territory" d="M260,170 L380,210 L470,180 L520,250 L470,330 L360,330 L300,270 Z"/>
+<path class="conquered" d="M300,560 L420,520 L470,430 L540,440 L520,540 L470,610 L360,620 L290,600 Z"/>
+<!-- 지역 워터마크 -->
+<text class="region-label" x="120" y="430">AEGYPTVS</text>
+<text class="region-label" x="430" y="280">SYRIA</text>
+<text class="region-label" x="640" y="300">ARABIA</text>
+<!-- 경로: 다마스쿠스 -> 카이로 -->
+<path class="route" d="M470,250 C420,330 380,420 360,540"/>
+<text class="year-marker" x="385" y="400">1164·1167·1169</text>
+<!-- 도시 -->
+<circle class="capital" cx="470" cy="250" r="6"/><text class="city-label" x="480" y="246">Damascus</text><text class="city-label-kr" x="480" y="262">다마스쿠스</text>
+<circle class="city" cx="455" cy="205" r="5"/><text class="city-label" x="465" y="201">Aleppo</text><text class="city-label-kr" x="465" y="217">알레포</text>
+<circle class="capital" cx="355" cy="555" r="6"/><text class="city-label" x="300" y="551">Cairo</text><text class="city-label-kr" x="300" y="567">카이로</text>
+<circle class="city" cx="330" cy="585" r="5"/><text class="city-label" x="338" y="600">Fustat</text><text class="city-label-kr" x="338" y="614">푸스타트</text>
+<circle class="city" cx="300" cy="500" r="5"/><text class="city-label" x="248" y="496">Alexandria</text><text class="city-label-kr" x="248" y="512">알렉산드리아</text>
+<circle class="city" cx="430" cy="500" r="4"/><text class="city-label" x="438" y="496">Bilbeis</text>
+<circle class="city" cx="540" cy="195" r="4"/><text class="city-label" x="548" y="191">Mosul</text><text class="city-label-kr" x="548" y="207">모술</text>
+<!-- 전투/공성 -->
+<text class="battle-x" x="294" y="505">⊗</text>
+<circle class="battle-ring" cx="300" cy="500" r="11"/>
+<text class="year-marker" x="248" y="528">Alexandria 1167</text>
+<!-- 이웃 -->
+<text class="neighbor-label" x="430" y="160">SELJUQ · ZANGID</text>
+<text class="neighbor-label" x="250" y="400">FATIMID CALIPHATE</text>
+</svg>
+<div class="map-legend"><span><i class="lg-other"></i> 셀주크·장기 세력권</span><span><i class="lg-persia"></i> 시리아 거점</span><span><i class="lg-conquered"></i> 이집트(파티마조) 장악</span><span><i class="lg-route"></i> 원정 경로(3회)</span><span><i class="lg-battle"></i> 공성·전투</span></div>
+<p class="map-caption">세 차례에 걸친 이집트 원정. 살라딘은 부관으로 따라갔다가 와지르로 남았고, 그 나일강 삼각주가 훗날 그의 모든 전쟁을 떠받칠 곡창이자 금고가 된다.</p>
+</section>
+
+<article class="chapter" id="ch2"><header class="chapter-head"><div class="chapter-num">II</div><div class="chapter-title"><div class="when">AD 1164–1169 · 시리아에서 이집트로</div><h2>나일강으로 — 청년 부관의 세 차례 원정</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch02_이집트.mp3"></audio></div>
+<p class="lead">작은아버지가 그를 전쟁터로 거의 끌고 갔다. 가기 싫어 발을 끌던 청년은, 세 번의 원정이 끝났을 때 이집트의 실권자가 되어 있었다.</p>
+
+<p class="dropcap">살라딘이 모셨던 주군 <strong>누르 알딘 마흐무드 장기</strong>는 당대 이슬람 세계의 가장 큰 인물이었다. 알레포와 다마스쿠스를 손에 넣어 시리아를 통일한 그는, 십자군을 몰아내기 위해서는 무슬림이 먼저 하나가 되어야 한다는 신념을 평생의 정책으로 삼았다. 그의 눈에 카이로의 시아파 파티마 왕조는 두 가지 의미였다. 종파의 이단이자, 동시에 거대한 부의 보고였다. 마침 파티마 조정은 두 명의 와지르가 권력을 다투며 내부에서 무너지고 있었다. 쫓겨난 와지르 샤와르(Shāwar)가 다마스쿠스로 달려와 도움을 청하자, 누르 알딘은 절호의 기회를 보았다.</p>
+
+<p>원정의 칼자루는 살라딘의 작은아버지 <strong>아사드 알딘 시르쿠</strong>에게 맡겨졌다. 시르쿠는 키가 작고 다리가 짧으며 한쪽 눈에 백태가 낀, 결코 미남이라 할 수 없는 사내였으나 전장에서는 사자였다. 별명부터가 '산속의 사자(Asad al-Dīn)'였다. 그가 1164년 첫 원정에 조카 살라딘을 부관으로 데려갔다. 바하 알딘에 따르면 청년 살라딘은 이 명을 반기지 않았다. 다마스쿠스의 학문과 안락을 떠나기 싫었던 것이다. 그러나 시르쿠는 막무가내였다. 훗날 살라딘은 이렇게 회고했다.</p>
+
+<blockquote>나는 마치 도살장으로 끌려가는 사람처럼 이집트로 갔다. 그러나 신께서 나를 위해 예비하신 것이 거기에 있었다.
+<cite>살라딘의 회고, 바하 알딘 『진귀한 기록』 전재</cite></blockquote>
+
+<p>전쟁은 한 번에 끝나지 않았다. 1164년, 1167년, 1169년 세 차례에 걸쳐 시르쿠와 살라딘은 이집트로 들어갔다. 상황은 어지러웠다. 파티마의 와지르 샤와르는 누르 알딘의 군대를 끌어들였다가, 그들이 너무 강해지자 이번에는 예루살렘 왕국의 십자군을 끌어들여 시리아군을 견제했다. 무슬림과 기독교 세력이 나일강을 두고 동맹과 배신을 거듭하는 진흙탕 외교가 펼쳐졌다. 1167년 살라딘은 알렉산드리아에서 십자군과 파티마 연합군에게 포위당한 채 농성을 치렀다. 식량과 물이 떨어지는 가운데 그는 침착하게 도시를 지켜냈고, 이 공성전은 무명의 청년 부관이 처음으로 자신의 지휘 능력을 증명한 무대가 되었다.</p>
+
+<p>알렉산드리아 농성에는 그의 성품을 엿보게 하는 일화가 따라붙는다. 포위가 풀리고 협상으로 도시를 넘겨줄 때, 그는 자신을 괴롭히던 십자군 왕 아모리와 의외로 정중한 관계를 맺었다고 전한다. 양측은 포로를 교환하고 예의를 갖춰 헤어졌으며, 일부 십자군 기사들은 이 젊은 무슬림 지휘관의 절제된 태도에 깊은 인상을 받았다고 한다. 적과 싸우면서도 적의 존경을 얻는, 훗날 리처드와의 관계에서 절정에 이를 그 능력의 첫 씨앗이 이미 이 나일강 삼각주에서 움트고 있었던 것이다.</p>
+
+<p>세 차례 원정의 본질은 단순한 정복이 아니라 거대한 도박이었다. 시리아 본대에서 멀리 떨어진 이집트는 보급선이 길고, 십자군과 파티마군이 언제든 협공할 수 있는 위험한 땅이었다. 누르 알딘이 거듭 군대를 보낸 것은 그만큼 이집트의 부가 압도적이었기 때문이다. 나일강 삼각주의 곡창과 홍해 무역의 관세는, 손에 넣기만 하면 시리아의 빈약한 재정을 단숨에 몇 배로 불려 줄 보물단지였다. 실제로 이집트를 장악한 뒤 살라딘의 군사력은 비약적으로 커졌고, 훗날 하틴에 동원된 삼만 대군의 군량과 봉급은 바로 이 나일강에서 나왔다. 청년 부관의 마지못한 종군이, 결국 그의 모든 전쟁을 떠받칠 토대를 마련해 준 셈이다.</p>
+
+<p>이집트 원정기는 또한 살라딘이 십자군이라는 적의 실체를 처음으로 가까이에서 관찰한 시기이기도 했다. 그는 예루살렘 왕 아모리가 이끄는 십자군이 얼마나 잘 조직된 기병 전력을 갖추었는지, 그리고 그 중무장 기사단이 정면 충돌에서 얼마나 위협적인지를 직접 목격했다. 동시에 그들의 약점 — 본국에서 멀리 떨어진 보급의 한계, 더위에 취약한 갑옷, 그리고 한번 야전군을 잃으면 회복하기 어려운 인적 자원 — 도 눈여겨보았다. 이 관찰은 이십 년 뒤 하틴에서 그대로 실전 전략이 된다. 적을 알기 위해 적과 함께 싸우고 적과 맞서 싸운 이 견습기가, 그를 십자군 전쟁의 가장 깊은 이해자로 키운 것이다.</p>
+
+<p>이집트 장악이 가지는 전략적 의미는 지도를 펼쳐 보면 더욱 분명해진다. 당시 십자군 국가들은 지중해 동안에 남북으로 길게 늘어서 있었고, 그 남쪽 끝은 이집트와 맞닿아 있었다. 만약 무슬림이 이집트와 시리아를 동시에 손에 넣으면 십자군 국가는 남북 양쪽에서 협공당하는 형국에 놓이고, 반대로 십자군이 이집트를 차지하면 무슬림 세계는 둘로 동강 난다. 그래서 이집트는 십자군 전쟁의 가장 중요한 전략적 길목이었다. 누르 알딘과 아모리 왕이 그토록 집요하게 나일강으로 군대를 보낸 까닭이 여기에 있었다. 살라딘이 이집트를 무슬림 진영으로 확정 지은 1171년의 사건은, 사실상 하틴의 승리를 십육 년 앞당겨 예약한 것이나 다름없었다.</p>
+
+<figure class="wide"><img src="images/Saladin_in_Egypt_Conquest.png" alt="살라딘의 이집트 장악 경로"><figcaption><b>살라딘의 이집트 장악(1169–1171)</b> · 파티마 왕조의 와지르를 거쳐 권력을 잡기까지의 경로를 보여 주는 지도. [Wikimedia · CC BY-SA]</figcaption></figure>
+
+<p>1169년 세 번째 원정에서 모든 것이 결판났다. 시르쿠가 십자군을 몰아내고 카이로에 입성해 마침내 <strong>파티마 칼리프의 와지르</strong> 자리에 올랐다. 명목상 시아파 칼리프를 섬기는 자리였으나, 실권은 온전히 그의 것이었다. 그러나 영광은 두 달 만에 끝났다. 시르쿠가 갑작스러운 발작으로 세상을 떠난 것이다. 과식 뒤의 졸중으로 전한다. 누가 그 막강한 자리를 이을 것인가. 카이로의 파티마 칼리프 <strong>알아디드</strong>는 머리를 굴렸다. 시리아 장수들 가운데 가장 젊고, 가장 만만해 보이는 자를 앉히면 자신이 다시 실권을 쥘 수 있으리라. 그가 고른 인물이 서른두 살의 살라딘이었다. 역사상 가장 큰 오판 중 하나였다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 만만해 보였던 자</h5>
+<p>이븐 알아시르를 비롯한 사료들은 파티마 조정과 시리아 장수들 모두가 살라딘을 '다루기 쉬운 후보'로 보아 그를 와지르로 밀었다고 전한다. 그가 젊고 가문이 외부 출신이라 독자 세력이 없을 것이라 본 것이다. 그러나 권좌에 앉은 살라딘은 곧장 카이로의 군과 행정을 장악하고, 자기 일족과 쿠르드·튀르크 병사들을 요직에 심었다. '약한 후보'를 세우려던 모두의 계산이 거꾸로 그에게 권력을 몰아 준 셈이다. 약점으로 여겨진 것이 도리어 자유로운 손을 쥐여 준 역설이었다.</p>
+<p class="src">[Source] 이븐 알아시르, 『완전한 역사(al-Kāmil fī al-Tārīkh)』; H. Möhring, *Saladin: The Sultan and His Times*(2008).</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 사자의 죽음, 과식의 전설</h5>
+<p>시르쿠의 죽음을 두고 사료들은 '지나친 식욕' 끝의 졸도를 거듭 언급한다. 그가 기름진 음식을 즐겼고 비만했다는 묘사와 맞물려, 이 일화는 중세 연대기 특유의 도덕적 교훈 — 절제 없는 욕망의 끝 — 으로 윤색되었을 가능성이 크다. 진단의 정확성은 알 수 없으나, 조카 살라딘이 평생 검소한 식탁과 절제를 고수한 것이 작은아버지의 최후에서 받은 인상과 무관하지 않으리라는 해석도 있다.</p>
+<p class="src">[Source] 바하 알딘 『진귀한 기록』; 이마드 알딘 알이스파하니의 동시대 기록.</p></div>
+
+<div class="world-context"><h5>예루살렘 왕국</h5><p>왕 아모리 1세(Amalric)는 이집트를 차지하려고 거듭 나일강에 군대를 보냈다. 만약 십자군이 이집트의 부와 곡창을 손에 넣었다면 근동의 균형은 영원히 기울었을 것이다. 살라딘의 이집트 장악은 바로 그 가능성을 봉쇄한 사건이었다.</p>
+<h5>비잔티움</h5><p>콘스탄티노폴리스의 마누엘 1세 콤네노스는 이집트 원정에 함대를 보내 십자군과 공조했으나 별 성과 없이 물러났다. 동로마의 마지막 전성기가 저물어 가고 있었다.</p></div>
+</article>
+
+<article class="chapter" id="ch3"><header class="chapter-head"><div class="chapter-num">III</div><div class="chapter-title"><div class="when">AD 1169–1171 · 카이로</div><h2>파티마의 종언, 아이유브의 새벽</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch03_파티마.mp3"></audio></div>
+<p class="lead">금요 예배의 설교에서 이름 하나를 바꿔 부르는 것으로, 이백 년을 이어 온 한 왕조가 조용히 끝났다.</p>
+
+<p class="dropcap">와지르가 된 살라딘 앞에는 미묘한 균형의 줄타기가 놓여 있었다. 그는 명목상 시아파 파티마 칼리프의 신하였으나, 실제로는 수니파 누르 알딘이 보낸 사람이었다. 두 주군 사이에서 그는 신중하게 발을 옮겼다. 먼저 파티마 칼리프궁을 호위하던 흑인 보병대와 누비아 친위대의 반란을 진압해 카이로의 무력을 자기 손에 넣었다. 이어 군대의 봉급과 식량을 직접 관장하며 충성의 고리를 자신에게로 옮겼다. 동시에 그는 검소하게 처신했다. 와지르가 되자 술과 향락을 끊고, 경건한 학자와 법관들을 가까이 두었다. 카이로의 민심이 서서히 그에게로 기울었다.</p>
+
+<p>결정적 순간은 1171년 9월에 왔다. 마지막 파티마 칼리프 <strong>알아디드</strong>가 병으로 죽어 가고 있었다. 살라딘은 그가 숨을 거두기 직전, 금요 예배의 <strong>후트바</strong>(설교)에서 칼리프의 이름을 바꾸라 명했다. 카이로의 모스크에서 이백 년 동안 불려 온 파티마 칼리프의 이름 대신, 바그다드의 수니파 <strong>아바스 칼리프</strong>의 이름이 울려 퍼졌다. 한 줄의 기도문이 바뀐 것뿐이었으나, 그것은 909년부터 이어진 <strong>파티마 왕조의 종언</strong>이자, 근동의 시아파 칼리프국이 사라지고 수니파의 세계로 통합되는 거대한 전환이었다. 며칠 뒤 알아디드는 자신의 왕조가 끝났다는 사실조차 알지 못한 채 눈을 감았다고 전한다.</p>
+
+<figure class="portrait"><img src="images/Citadel_of_Salah_El.Din.jpg" alt="카이로 시타델"><figcaption><b>카이로 성채(Citadel of Saladin)</b> · 1176년 착공. 살라딘이 무카탐 언덕에 세운 군사 요새로, 이후 칠백 년간 이집트 통치의 심장부가 되었다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>이제 이집트의 주인이 된 살라딘은 새 질서를 세우기 시작했다. 그는 자기 아버지의 이름을 따 <strong>아이유브 왕조</strong>(Ayyūbid dynasty)를 열었다. 수니파 신학을 진흥하기 위해 카이로 곳곳에 <strong>마드라사</strong>(법학원)를 세웠고, 시아파 색채가 짙던 도시를 수니파의 중심으로 재편했다. 무카탐 언덕 위에는 거대한 <strong>성채(시타델)</strong>를 쌓아 올렸는데, 이 요새는 오늘날까지 카이로의 스카이라인을 지키며 그의 이름을 붙들고 있다. 다만 그가 형식상으로는 여전히 누르 알딘의 부하였다는 사실은 곧 두 사람 사이에 팽팽한 긴장을 낳게 된다.</p>
+
+<p>여기서 그의 성격을 보여 주는 한 장면이 있다. 파티마 칼리프 일가에 대한 처분이다. 정복자가 전 왕조의 혈통을 몰살하는 것이 당대의 흔한 관행이었으나, 살라딘은 그렇게 하지 않았다. 그는 파티마 가문 사람들을 궁에 연금하되 목숨을 보전하고, 남녀를 분리해 후사를 잇지 못하게 하는 선에서 멈췄다. 학살 대신 격리를 택한 이 절제는, 십육 년 뒤 예루살렘에서 다시 한번, 훨씬 거대한 규모로 되풀이된다.</p>
+
+<p>파티마 왕조의 멸망은 단순한 정권 교체가 아니라 이슬람 사상사의 한 분수령이었다. 909년 북아프리카에서 일어나 카이로를 세운 파티마조는 시아파 이스마일파의 거대한 실험이었다. 그들은 알아즈하르 모스크와 그 부속 학원을 세워 시아 신학의 중심지로 삼았고, 한때 지중해 동부의 무역과 학문을 호령했다. 그 이백육십여 년의 역사가 살라딘의 한 번의 후트바 교체로 막을 내린 것이다. 흥미롭게도 살라딘이 수니파의 거점으로 재편한 그 알아즈하르는, 수백 년이 지난 오늘날 수니파 이슬람 학문의 최고 권위로 남아 있다. 한 정복자의 종파 정책이 천 년의 사상 지형을 바꾸어 놓은 셈이다.</p>
+
+<p>흥미로운 것은 이 거대한 종파 전환이 거의 유혈 없이 이루어졌다는 점이다. 카이로의 시아파 주민들이 하루아침에 수니파로 개종한 것은 물론 아니었다. 살라딘은 강제 개종이라는 손쉬운 폭력 대신, 수니파 학원을 세우고 수니 법관을 임명하며 시간을 두고 도시의 종교 지형을 천천히 바꾸어 나갔다. 시아파 의례를 당장 금지하기보다 공적 권위에서 배제하는 방식이었다. 이 점진적 접근은 격렬한 반발을 피하면서도 확실한 전환을 이끌어 냈다. 급격한 변화를 강요하지 않고 제도와 시간으로 흐름을 돌려놓는 이 방식은, 그가 시리아 통합에서 보여 줄 '부드러운 정복'의 예고편이기도 했다.</p>
+
+<p>새 술탄으로서 살라딘이 가장 공들인 것은 정통성의 확보였다. 그는 바그다드의 아바스 칼리프에게 사절과 공물을 보내, 자신의 통치를 공식적으로 인준받으려 했다. 칼리프가 보낸 임명장과 명예의 예복(칼리프가 하사하는 의복은 곧 통치권의 상징이었다)을 받음으로써, 그는 '벼락출세한 쿠르드 무장'이 아니라 '정통 수니 칼리프가 임명한 술탄'으로 격상되었다. 동시에 그는 지하드, 곧 십자군에 맞선 성전(聖戰)의 기치를 자신의 통치 이념으로 내걸었다. 종교적 명분과 칼리프의 권위, 그리고 이집트의 부 — 이 세 기둥 위에서 비로소 아이유브 왕조가 단단히 섰다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 사라진 보물 창고</h5>
+<p>파티마 칼리프궁에는 이백 년간 축적된 전설적인 보물 창고가 있었다. 사료들은 거대한 도서관, 진귀한 보석, 페르시아·중국에서 온 도자기, 그리고 에메랄드로 깎은 잉크병까지 전한다. 살라딘은 이 보물의 상당량을 풀어 군대의 봉급과 새 정권의 운영 자금으로 썼다. 파티마의 방대한 장서가 이 과정에서 흩어졌고, 일부는 헐값에 팔려 나갔다고 한다. 후세 학자들은 이슬람 도서 문화의 큰 손실로 이를 안타까워한다. 다만 도서관 해체의 책임을 어디까지 살라딘에게 물을 수 있는지는 사료마다 평가가 갈린다.</p>
+<p class="src">[Source] 알마크리지(al-Maqrīzī)의 후대 기록; A.-M. Eddé, *Saladin*, 이집트 행정 장.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 두 주군 사이의 줄타기</h5>
+<p>이집트를 장악한 살라딘과 시리아의 누르 알딘 사이는 갈수록 껄끄러워졌다. 누르 알딘은 살라딘이 막대한 이집트의 부를 자기에게 충분히 바치지 않는다고 의심했고, 한때 직접 군대를 이끌고 이집트를 치려 했다는 이야기도 전한다. 살라딘은 표면적으로 깍듯이 복종하면서도 실질적 독립을 유지하는 아슬아슬한 줄타기를 이어 갔다. 이 긴장은 1174년 누르 알딘이 갑자기 죽으면서 비로소 풀리게 된다. 운명은 또 한 번 그에게 길을 비켜 주었다.</p>
+<p class="src">[Source] 이븐 알아시르 『완전한 역사』; M. C. Lyons & D. E. P. Jackson, *Saladin: The Politics of the Holy War*(1982).</p></div>
+
+<div class="factbox"><h4>1171년의 전환</h4>
+<ul>
+<li><b>끝난 왕조</b>파티마 칼리프국 (909–1171, 시아파 이스마일파)</li>
+<li><b>방식</b>금요 후트바의 칼리프 이름 교체</li>
+<li><b>새 종주</b>바그다드 아바스 칼리프 (수니파)</li>
+<li><b>새 왕조</b>아이유브 왕조 (1171–1260년대)</li>
+<li><b>상징물</b>카이로 성채 (1176 착공)</li>
+</ul></div>
+
+<div class="world-context"><h5>서유럽</h5><p>잉글랜드에서는 1170년 캔터베리 대주교 토머스 베켓이 헨리 2세의 기사들에게 살해되는 사건이 일어나 기독교 세계를 뒤흔들었다. 그 헨리 2세의 아들이 훗날 살라딘의 맞수가 될 리처드다.</p>
+<h5>이베리아</h5><p>북아프리카와 안달루스에서는 알모하드 왕조가 절정에 이르러, 또 다른 전선에서 기독교 레콘키스타와 맞서고 있었다. 이슬람 세계는 동쪽과 서쪽 양끝에서 동시에 십자군 시대를 살아가고 있었다.</p></div>
+</article>
+
+<article class="chapter" id="ch4"><header class="chapter-head"><div class="chapter-num">IV</div><div class="chapter-title"><div class="when">AD 1174–1186 · 시리아·자지라</div><h2>시리아 통합 — 십이 년의 인내</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch04_시리아.mp3"></audio></div>
+<p class="lead">진짜 적은 십자군이라 외치면서도, 그는 십이 년을 동료 무슬림과 싸웠다. 그 모순을 견디는 것이 그의 가장 어려운 전쟁이었다.</p>
+
+<p class="dropcap">1174년, 살라딘의 옛 주군 누르 알딘이 다마스쿠스에서 갑작스레 세상을 떠났다. 후계자는 열한 살의 어린 아들 <strong>알살리흐 이스마일</strong>이었고, 그를 둘러싼 장기조(Zangid) 신하들은 곧장 파벌로 갈라져 다투기 시작했다. 같은 해 예루살렘 왕국의 아모리 왕도 죽고, 그 자리는 나병을 앓는 소년 왕 <strong>보두앵 4세</strong>가 이었다. 근동의 세 강자가 한 해에 사라지거나 약해진 것이다. 살라딘은 이 권력 공백을 기회로 보았다. 그는 어린 주군을 보호한다는 명분으로 다마스쿠스에 입성해, 사실상 시리아의 새 주인을 자처했다.</p>
+
+<p>그러나 길은 험했다. 누르 알딘의 옛 신하들, 특히 알레포와 모술을 쥔 장기조 세력은 살라딘을 '주군의 자리를 가로챈 벼락출세한 부하'로 보고 격렬히 저항했다. 그들은 심지어 산속의 암살 교단 <strong>아사신(니자리 이스마일파)</strong>을 끌어들여 살라딘을 노렸다. 살라딘은 두 차례 암살 위기를 넘겼다. 한 번은 칼이 두건 속에 숨겨 둔 사슬 두건에 막혔고, 또 한 번은 잠자던 그의 곁에 독을 바른 단검과 빵이 놓여 있었다고 전한다. 그는 결국 아사신의 본거지 <strong>마시아프</strong> 요새를 포위했으나, 어떤 협상 끝에 포위를 풀고 물러났다. 이후 양측은 서로를 건드리지 않는 묵계에 이르렀다.</p>
+
+<figure class="wide"><img src="images/Masyaf_-_Gesamtansicht.jpg" alt="마시아프 요새"><figcaption><b>마시아프 요새</b> · 시리아 누사이리야 산맥의 아사신 교단 본거지. 살라딘은 이곳을 포위했다가 풀고 물러났으며, 이후 양측은 불가침의 묵계에 들어갔다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>시리아 통합에는 꼬박 십이 년이 걸렸다. 살라딘은 다마스쿠스(1174)를 시작으로 홈스, 하마, 발벡을 차례로 거두고, 가장 완강했던 <strong>알레포</strong>를 1183년에야 손에 넣었다. 마지막으로 1186년 <strong>모술</strong>이 그의 종주권을 인정하면서, 이집트에서 시리아·자지라(상부 메소포타미아)·헤자즈에 이르는 거대한 권역이 한 사람의 깃발 아래 묶였다. 이 십이 년 동안 그가 십자군과 벌인 전투보다 동료 무슬림과 벌인 전투가 더 많았다는 사실은, 당대에도 날카로운 비판을 불렀다.</p>
+
+<blockquote>그는 지하드를 명분으로 내세웠으나, 그의 칼은 더 자주 같은 신앙의 형제들을 향했다.
+<cite>이븐 알아시르 『완전한 역사』의 비판적 논평</cite></blockquote>
+
+<p>이 비판은 정당한 면이 있다. 모술의 역사가 이븐 알아시르는 장기 가문에 충성했기에 살라딘에게 시종 냉정했다. 그러나 살라딘의 논리도 분명했다. 십자군에 맞서는 <strong>지하드</strong>를 성공시키려면, 먼저 갈가리 찢긴 무슬림 세계를 하나의 군사·재정 체제로 통합해야 한다는 것이다. 분열된 채로는 백 번을 싸워도 해안의 십자군을 바다로 밀어낼 수 없었다. 그는 이 통합을 위해 무력만 쓰지 않았다. 결혼 동맹, 관대한 사면, 봉토의 재분배, 그리고 바그다드 칼리프의 권위를 빌린 명분 만들기를 능란하게 결합했다. 큰일을 이루려면 눈앞의 비난을 견디며 토대를 다지는 긴 시간이 필요하다는 것 — 그것이 이 십이 년이 남긴 정치적 교훈이다.</p>
+
+<p>이 통합 과정에서 살라딘이 보여 준 정치 수완은 무력 못지않게 정교했다. 그는 정복한 도시의 옛 지배 가문을 무조건 제거하지 않았다. 오히려 그들과 혼인 동맹을 맺거나 봉토를 재배분해 자기 체제 안으로 끌어들였다. 항복한 적장에게는 관대한 조건을 제시해 다음 도시의 저항 의지를 꺾었고, 끝까지 맞선 자에게는 단호했다. 또한 그는 점령지마다 모스크와 마드라사, 수피 수도장을 세워 종교계의 지지를 다졌다. 칼로 빼앗은 땅을 신앙과 학문, 그리고 자선으로 다스린 것이다. 이런 '부드러운 통합'의 기술 덕분에, 십이 년에 걸쳐 묶인 광대한 권역이 하틴의 순간에 분열 없이 한 깃발 아래 움직일 수 있었다.</p>
+
+<p>그러나 이 시기 살라딘의 건강은 여러 차례 위태로웠다. 1185년경 그는 알레포 공략을 앞두고 중병을 앓아 한때 죽음의 문턱까지 갔다고 전한다. 측근들이 후계를 걱정할 정도였다. 그가 병석에서 일어나 끝내 알레포와 모술을 굴복시킨 것은, 통합의 대업이 그의 개인적 의지와 끈기에 얼마나 깊이 의존하고 있었는가를 보여 준다. 동시에 이는 그의 제국이 제도가 아니라 한 사람의 카리스마 위에 세워진 취약한 구조였음을 예고하는 것이기도 했다. 실제로 그가 죽자마자 그 통합이 흔들린 것은 우연이 아니었다.</p>
+
+<p>이 십이 년의 통합기는 살라딘이라는 인물의 성격을 가장 잘 드러내는 시기이기도 하다. 그는 결코 서두르지 않았다. 한 도시를 얻기 위해 몇 해를 기다렸고, 항복하지 않는 적을 무리하게 짓밟기보다 시간과 외교로 굴복시켰다. 알레포 공략에서 그는 무력 공성과 협상을 번갈아 쓰며 몇 차례나 포위를 풀었다가 다시 조였다. 동시대인들에게 우유부단해 보이기도 한 이 끈기가, 실은 무슬림 세계의 내부 분열을 최소한의 유혈로 봉합하려는 신중함이었다. 큰 적을 앞에 두고 같은 편을 너무 가혹하게 다루면 원한이 남아 결정적 순간에 등을 돌린다는 것을, 그는 알고 있었다. 그래서 그의 통합은 정복이라기보다 봉합에 가까웠고, 바로 그 부드러움이 하틴에서 거대한 연합군을 한 깃발 아래 묶어 낸 비결이었다.</p>
+
+<figure class="wide"><img src="images/Ayyubid_expansion_1174-1193.png" alt="아이유브 술탄국의 확장"><figcaption><b>아이유브 술탄국의 확장(1174–1193)</b> · 이집트에서 시작해 시리아·자지라·헤자즈·예멘까지 뻗어 나간 살라딘의 권역. [Wikimedia · CC BY-SA]</figcaption></figure>
+
+<figure class="wide"><img src="images/Coin_of_Saladin__Nisibin_mint__578_H__Obverse_and_reverse_.jpg" alt="살라딘의 주화"><figcaption><b>살라딘의 주화</b> · 니시빈 조폐소, 헤지라 578년(1182–83). 사산조 양식의 왕관을 쓴 형상이 새겨져, 그가 옛 동방 군주의 권위를 계승하려 했음을 보여 준다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>통합의 와중에도 십자군과의 전선은 끊이지 않았다. 1177년에는 <strong>몽기사르(Montgisard)</strong>에서 나병왕 보두앵 4세에게 뼈아픈 참패를 당했고, 1179년에는 거꾸로 요르단강 상류의 십자군 신축 요새 <strong>야곱의 여울(Jacob's Ford)</strong>을 함락시켜 설욕했다. 성벽이 채 마르기도 전에 무너진 이 요새의 폐허는 오늘날에도 들판에 남아, 그 시대의 긴장을 증언한다.</p>
+
+<figure class="wide"><img src="images/JacobsFordBattlefield.jpg" alt="야곱의 여울 전쟁터"><figcaption><b>야곱의 여울(Jacob's Ford) 전쟁터</b> · 요르단강 상류. 1179년 살라딘이 십자군의 신축 요새를 함락시킨 자리로, 성벽이 완공되기 전에 무너졌다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<div class="aside-story"><h5>곁가지 1 — 베개 위의 단검</h5>
+<p>아사신의 두 번째 암살 시도에 관한 가장 극적인 전승은 이렇다. 마시아프를 포위한 살라딘이 어느 날 아침 눈을 떴을 때, 머리맡에 따뜻한 빵과 독을 바른 단검, 그리고 "그대는 우리 손안에 있다"는 쪽지가 놓여 있었다는 것이다. 교단의 우두머리 '산상 노인' 라시드 알딘 시난이 그날 밤 친히 다녀갔다는 암시였다. 이 일화는 후대에 많이 윤색되었으므로 사실 여부는 단정하기 어렵지만, 살라딘이 끝내 마시아프 포위를 풀고 아사신과 화해한 정황과는 잘 들어맞는다.</p>
+<p class="src">[Source] 후대 아사신 전승; B. Lewis, *The Assassins*(1967); 동시대 시리아 연대기.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 나병왕이라는 맞수</h5>
+<p>1177년 몽기사르 전투에서 살라딘에게 굴욕적 패배를 안긴 인물은 열여섯 살의 나병왕 보두앵 4세였다. 손가락 감각을 잃어 가는 병든 몸으로 직접 군을 이끈 이 소년 왕은, 살라딘조차 인정한 용맹한 적수였다. 살라딘 군은 방심한 채 진군하다 기습당해 큰 손실을 입고 간신히 이집트로 후퇴했다. 살라딘이 그토록 신중하고 끈질긴 지휘관이 된 데에는, 젊은 날 이 패배에서 얻은 교훈이 깔려 있다는 해석이 있다.</p>
+<p class="src">[Source] 윌리엄 오브 티레(William of Tyre)의 연대기; B. Hamilton, *The Leper King and His Heirs*(2000).</p></div>
+
+<div class="world-context"><h5>예루살렘 왕국</h5><p>나병왕 보두앵 4세가 병으로 쇠약해지면서 왕국 내부는 후계를 둘러싼 파벌 다툼으로 흔들렸다. 강경파 르노 드 샤티용(Raynald de Châtillon)은 휴전을 깨고 무슬림 대상과 순례단을 약탈해 살라딘의 분노를 거듭 샀다.</p>
+<h5>중앙아시아</h5><p>저 멀리 몽골 초원에서는 살라딘이 시리아를 통합하던 무렵, 한 부족장의 아들 테무진 — 훗날의 칭기즈 칸 — 이 부친을 잃고 시련의 유년을 보내고 있었다. 한 세대 뒤 그의 후예들이 바그다드를 불태우게 된다.</p></div>
+</article>
+
+<section class="campaign-map" aria-labelledby="map2-title">
+<div class="map-head"><h3 class="map-title" id="map2-title">Tabula II · 흩어진 것을 한 폭으로</h3><p class="map-subtitle">시리아 통합 1174–1186 — 다마스쿠스에서 알레포와 모술까지</p></div>
+<svg viewBox="0 0 920 680" xmlns="http://www.w3.org/2000/svg" class="campaign-svg" role="img" aria-label="살라딘의 시리아 통합 지도">
+<rect class="sea" x="0" y="0" width="920" height="680"/>
+<text class="sea-label" x="80" y="300">MARE MEDITERRANEVM</text>
+<!-- 통합 권역 -->
+<path class="macedonia-start" d="M300,360 L360,330 L420,360 L430,440 L380,500 L320,480 L300,420 Z"/>
+<path class="conquered" d="M360,330 L470,250 L600,230 L720,260 L760,360 L700,440 L560,470 L430,440 L420,360 Z"/>
+<path class="other-realm" d="M0,150 L300,120 L520,150 L760,150 L920,200 L920,680 L0,680 Z" opacity="0.25"/>
+<!-- 지역 라벨 -->
+<text class="region-label" x="430" y="320">SYRIA</text>
+<text class="region-label" x="640" y="200">AL-JAZIRA</text>
+<text class="region-label" x="200" y="500">AEGYPTVS</text>
+<!-- 경로: 카이로 -> 다마스쿠스 -> 알레포 -> 모술 -->
+<path class="route" d="M250,560 C300,470 330,420 360,380"/>
+<path class="route" d="M360,380 C400,330 460,300 520,280"/>
+<path class="route" d="M520,280 C600,255 660,250 720,265"/>
+<!-- 도시 -->
+<circle class="capital" cx="360" cy="380" r="6"/><text class="city-label" x="300" y="376">Damascus</text><text class="city-label-kr" x="300" y="392">다마스쿠스</text>
+<circle class="city" cx="350" cy="330" r="5"/><text class="city-label" x="358" y="326">Homs · Hama</text>
+<circle class="capital" cx="520" cy="280" r="6"/><text class="city-label" x="530" y="276">Aleppo</text><text class="city-label-kr" x="530" y="292">알레포</text>
+<circle class="capital" cx="720" cy="265" r="6"/><text class="city-label" x="660" y="255">Mosul</text><text class="city-label-kr" x="660" y="271">모술</text>
+<circle class="city" cx="250" cy="560" r="5"/><text class="city-label" x="200" y="556">Cairo</text><text class="city-label-kr" x="200" y="572">카이로</text>
+<circle class="city" cx="305" cy="290" r="4"/><text class="city-label" x="248" y="286">Acre</text><text class="city-label-kr" x="248" y="302">아크레</text>
+<circle class="city" cx="330" cy="420" r="4"/><text class="city-label" x="240" y="430">Jerusalem</text>
+<!-- 전투: 야곱의 여울, 몽기사르 -->
+<text class="battle-x" x="324" y="395">⊗</text><circle class="battle-ring" cx="330" cy="390" r="11"/><text class="year-marker" x="338" y="408">Jacob's Ford 1179</text>
+<text class="battle-x" x="284" y="335">⊗</text><circle class="battle-ring" cx="290" cy="330" r="11"/><text class="year-marker" x="200" y="324">Montgisard 1177</text>
+<text class="neighbor-label" x="640" y="420">ABBASID (Baghdad)</text>
+</svg>
+<div class="map-legend"><span><i class="lg-start"></i> 첫 거점 다마스쿠스</span><span><i class="lg-conquered"></i> 1174–86 통합 권역</span><span><i class="lg-route"></i> 통합 진군로</span><span><i class="lg-battle"></i> 십자군 전투</span></div>
+<p class="map-caption">알레포 1183, 모술 1186. 한 도시씩 십이 년에 걸쳐 묶어 낸 권역이 곧 하틴의 대군을 떠받칠 토대가 되었다.</p>
+</section>
+
+<article class="chapter" id="ch5"><header class="chapter-head"><div class="chapter-num">V</div><div class="chapter-title"><div class="when">AD 1187년 7월 4일 · 갈릴리, 하틴의 뿔</div><h2>하틴의 뿔 — 갈증으로 무너진 왕국</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch05_하틴.mp3"></audio></div>
+<p class="lead">한여름의 갈릴리, 물 한 모금을 향한 절망이 한 왕국 전체를 살라딘의 손바닥 위에 올려놓았다.</p>
+
+<p class="dropcap">전쟁의 도화선은 한 사람의 만행이었다. 십자군 강경파 <strong>르노 드 샤티용</strong>은 살라딘과 맺은 휴전을 거듭 어기고 무슬림 대상과 메카 순례단을 약탈했다. 전승에 따르면 그 약탈 대상 가운데 살라딘의 누이가 있었다는 이야기까지 전한다. 진위는 분명치 않으나, 살라딘이 르노의 머리를 직접 베겠다고 맹세했다는 기록은 여러 사료에 공통된다. 1187년, 그는 마침내 휴전의 명분을 거두고 시리아·이집트·자지라의 대군을 갈릴리로 집결시켰다. 십이 년의 통합이 비로소 하나의 거대한 망치가 되어 내려쳤다.</p>
+
+<p>예루살렘 왕국은 총력을 끌어모았다. 왕 <strong>기 드 뤼지냥</strong> 휘하에 약 이만의 병력, 그중 기사가 천이백 명에 달하는, 왕국 역사상 가장 큰 군대였다. 살라딘은 미끼를 던졌다. 그는 갈릴리 호숫가의 도시 <strong>티베리아스</strong>를 포위하고, 그 안에 트리폴리 백작 레몽의 아내를 가두었다. 십자군 진영은 갈렸다. 노련한 레몽은 "물이 풍부한 자리에 머물며 적을 기다리자, 티베리아스는 내 아내가 갇혔어도 포기하라"고 충고했다. 그러나 강경파 성전기사단장과 르노가 즉각 진군을 주장했고, 우유부단한 기 왕은 결국 진군을 택했다. 살라딘이 정확히 노린 결정이었다.</p>
+
+<p>7월 3일, 십자군은 물도 그늘도 없는 메마른 고원을 가로질러 티베리아스로 향했다. 무거운 갑옷을 입은 채 한여름 갈릴리의 폭염 속을 행군한 그들은 곧 <strong>갈증</strong>에 시달렸다. 살라딘의 기병은 사방에서 화살을 퍼부으며 그들을 괴롭혔고, 우물과 샘으로 가는 길목을 모조리 차단했다. 밤이 되자 십자군은 <strong>하틴의 뿔(Horns of Hattin)</strong>이라 불리는 쌍봉 언덕 부근에 갇힌 채 야영했다. 갈릴리 호수의 푸른 물이 눈앞에 보였으나 닿을 수 없었다. 살라딘은 여기에 마지막 한 수를 더했다. 메마른 들풀에 불을 지르게 한 것이다. 연기가 갈증에 더해 십자군의 폐를 태웠다.</p>
+
+<figure class="wide"><img src="images/3f23884eba98_ora__1235-59__24034025387_.jpg" alt="진리의 십자가를 빼앗는 살라딘"><figcaption><b>진리의 십자가를 빼앗는 살라딘</b> · 매튜 패리스(Matthew Paris)의 『대연대기(Chronica Majora)』, 1235–59년. 하틴에서 십자군이 가장 신성하게 여긴 성유물을 잃는 장면이다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>7월 4일 아침, 절망한 십자군은 호수를 향해 마지막 돌격을 감행했다. 그러나 갈증과 연기에 탈진한 그들은 살라딘의 그물을 뚫지 못했다. 진영은 무너졌고, 왕국의 군대는 거의 전멸하다시피 했다. 왕 기 드 뤼지냥이 사로잡혔고, 십자군의 가장 신성한 성유물인 <strong>참된 십자가(True Cross)</strong>가 살라딘의 손에 들어갔다. 한 왕국의 군사력과 종교적 상징이 한나절에 무너진 것이다. 이븐 알아시르조차 이 승리만큼은 인정하지 않을 수 없었다.</p>
+
+<blockquote>그날 이슬람은 패배 위에 다시 승리를 세웠다. 사로잡힌 자가 너무 많아, 한 명의 포로가 신발 한 켤레 값에 팔렸다.
+<cite>이븐 알아시르 『완전한 역사』, 하틴 전투 기록</cite></blockquote>
+
+<p>전투 뒤 살라딘은 자신의 두 얼굴을 동시에 보여 주었다. 그는 사로잡힌 기 왕을 천막으로 불러 손수 얼음물을 권하며 예우했다. 그러나 그 옆의 르노 드 샤티용에게는 맹세대로 직접 칼을 들어 목을 베었다. 또한 그는 평생 가장 위험한 적으로 여긴 <strong>성전기사단과 구호기사단</strong>의 포로 수백 명을 처형했다. 광신적 전투 수도회는 결코 회유할 수 없는 적이라 판단한 것이다. 너그러운 군주의 칼에도 분명한 한계선이 있었다. 자비와 단호함을 상황에 따라 가르는 그 감각이, 그를 단순한 호인이 아니라 정치가로 만들었다.</p>
+
+<p>하틴의 군사적 의미는 아무리 강조해도 지나치지 않다. 중세 예루살렘 왕국의 방어력은 소수의 중무장 기사단에 절대적으로 의존했다. 농경 인구가 적은 십자군 국가는 한번 야전군을 잃으면 그것을 재건할 인적 자원이 없었다. 살라딘은 바로 그 약점을 정확히 노렸다. 그는 도시 하나하나를 차례로 공략하는 더딘 방식 대신, 왕국의 야전군 전체를 한 자리로 끌어내 단 하루의 전투로 절멸시키는 길을 택했다. 결과는 그의 계산대로였다. 하틴 이후 예루살렘 왕국에는 성벽을 지킬 병사가 거의 남지 않았고, 그래서 두 달 만에 수십 개의 도시와 요새가 도미노처럼 무너졌다. 한 번의 결전으로 한 왕국의 운명을 결정짓는 — 군사사에서 손꼽히는 '섬멸전'의 모범이었다.</p>
+
+<p>하틴은 또한 심리전과 환경 전술의 교과서이기도 했다. 살라딘은 적의 물리적 힘을 정면으로 부수는 대신, 갈증과 연기, 화살과 포위로 적의 의지를 먼저 무너뜨렸다. 무거운 갑옷과 밀집 대형이라는 십자군의 강점을, 물 없는 고원이라는 지형으로 거꾸로 약점으로 바꾸어 놓은 것이다. 적을 자신이 싸우고 싶은 자리로 유인하고, 자연 조건마저 무기로 삼는 이 방식은, 동서고금의 명장들이 공유한 전쟁의 본질 — 싸우기 전에 이미 이겨 놓고 싸운다 — 을 그대로 구현한 것이었다.</p>
+
+<p>전투의 무대가 된 하틴의 뿔은 갈릴리 호수 서쪽에 솟은 사화산의 쌍봉 언덕이다. 두 개의 봉우리가 짐승의 뿔처럼 솟아 있어 그런 이름이 붙었다. 오늘날 이곳에 서면 멀리 푸른 갈릴리 호수가 한눈에 들어오는데, 바로 그 호수를 눈앞에 두고도 닿지 못해 갈증으로 무너진 십자군의 비극이 더욱 선명하게 다가온다. 물이 보이는데 마실 수 없는 것만큼 사람의 의지를 꺾는 고문은 없다. 살라딘은 인간 심리의 이 약한 고리를 정확히 짚었다. 그는 적의 몸이 아니라 적의 마음을 먼저 무너뜨렸고, 무너진 마음은 가장 용맹한 기사단마저 한낮의 갈증 앞에 무력하게 만들었다.</p>
+
+<p>또 한 가지, 하틴 전투에는 우유부단한 지도자가 어떻게 한 왕국을 파멸로 이끄는가에 관한 뼈아픈 교훈이 담겨 있다. 노련한 트리폴리 백작 레몽은 물이 있는 자리에서 적을 기다리자고 했으나, 우유부단한 기 드 뤼지냥 왕은 강경파의 압박에 못 이겨 진군을 택했다. 만약 기 왕이 레몽의 조언을 따랐다면 역사는 달라졌을지 모른다. 살라딘의 승리는 그의 뛰어난 지휘만큼이나, 적장의 결단력 부재가 빚어낸 결과이기도 했다. 위대한 승리의 뒤에는 종종 상대의 치명적 실수가 숨어 있다는 것 — 그것이 군사사가 거듭 들려주는 교훈이다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 신발 한 켤레 값의 포로</h5>
+<p>하틴 이후 포로가 시장에 넘쳐, 사람 한 명의 몸값이 신발 한 켤레 값까지 떨어졌다는 일화는 여러 무슬림 사료에 거듭 등장한다. 어떤 기사는 자기 목숨값으로 단 한 짝의 샌들을 받고 팔려 갔다고 한다. 과장이 섞였을 수 있으나, 십자군 포로의 수가 시장을 마비시킬 만큼 압도적이었다는 정황을 생생히 전한다. 한 전투의 승패가 한 사회의 물가까지 흔든 드문 사례다.</p>
+<p class="src">[Source] 이븐 알아시르 『완전한 역사』; 이마드 알딘 알이스파하니, 하틴 종군 기록.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 손수 벤 한 사람</h5>
+<p>살라딘이 르노 드 샤티용을 직접 처형한 장면은 그의 자비의 한계를 보여 주는 핵심 일화다. 사료에 따르면, 살라딘은 사로잡힌 기 왕에게 얼음물을 권한 뒤 그 잔이 르노에게 건너가려 하자 손을 저었다. 자신이 베푼 물을 마신 자는 관례상 죽이지 않으므로, 르노에게는 그 잔을 허락하지 않은 것이다. 그러고는 휴전을 어기고 순례단을 학살한 죄를 물어 손수 칼을 들었다. 정확한 동작은 사료마다 다르나, 르노만은 결코 살려 두지 않겠다는 그의 오랜 맹세가 실행된 점은 일치한다.</p>
+<p class="src">[Source] 이마드 알딘; 바하 알딘 『진귀한 기록』; 십자군 측 『순례자 여정기(Itinerarium)』.</p></div>
+
+<div class="factbox"><h4>하틴 전투 1187.7.4</h4>
+<ul>
+<li><b>장소</b>갈릴리 하틴의 뿔 (쌍봉 언덕)</li>
+<li><b>십자군</b>약 2만 (기사 약 1,200)</li>
+<li><b>아이유브군</b>약 3만 (기병 주력)</li>
+<li><b>승패 요인</b>갈증·고립·들풀 화공</li>
+<li><b>전리품</b>참된 십자가, 기 드 뤼지냥 왕 생포</li>
+<li><b>여파</b>두 달 만에 왕국 대부분 함락</li>
+</ul></div>
+
+<div class="world-context"><h5>유럽</h5><p>하틴과 예루살렘 함락 소식이 전해지자 교황 우르바누스 3세는 충격으로 쓰러져 곧 사망했다고 전한다. 뒤를 이은 그레고리우스 8세가 즉시 새로운 십자군 — 제3차 십자군 — 을 호소했다.</p>
+<h5>중국</h5><p>같은 해 남송에서는 효종이 다스리며 주자학(성리학)이 꽃을 피우고 있었다. 주희(주자)가 학문 체계를 완성해 가던 시기로, 동방의 사상사와 서방의 전쟁사가 같은 시간을 흐르고 있었다.</p></div>
+</article>
+
+<article class="chapter" id="ch6"><header class="chapter-head"><div class="chapter-num">VI</div><div class="chapter-title"><div class="when">AD 1187년 10월 2일 · 예루살렘</div><h2>예루살렘 — 피 없이 받은 성도</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch06_예루살렘.mp3"></audio></div>
+<p class="lead">팔십팔 년 전 십자군은 학살로 이 도시를 차지했다. 살라딘은 그 도시를, 거의 한 방울의 피도 흘리지 않고 되찾았다.</p>
+
+<p class="dropcap">하틴 이후 예루살렘 왕국은 빈껍데기였다. 군대를 잃은 도시들은 차례로 항복했다. 아크레, 야파, 베이루트, 시돈, 아스칼론이 두 달 만에 살라딘의 손에 들어왔다. 그리고 마침내 그의 군대가 <strong>예루살렘</strong> 성벽 앞에 섰다. 성안에는 정규군이 거의 없었다. 도시 방어를 떠맡은 이는 우연히 그곳에 있던 기사 <strong>발리앙 드 이블랭(Balian of Ibelin)</strong>이었다. 그는 수만 명의 피란민과 부녀자를 데리고 절망적인 농성을 시작했다.</p>
+
+<p>살라딘은 처음에는 도시를 무력으로 함락해 1099년의 빚을 갚으려 했다. 그러나 발리앙이 협상 자리에서 마지막 카드를 꺼냈다. 만약 무자비한 학살을 강행한다면, 자신들이 성안의 모든 무슬림 포로를 죽이고 이슬람의 성소 — 바위의 돔과 알아크사 모스크 — 를 스스로 파괴한 뒤 마지막 한 사람까지 싸우다 죽겠다는 것이었다. 양쪽 모두에게 파국이 될 위협이었다. 살라딘은 참모들과 상의한 끝에, 자비가 곧 더 큰 승리임을 택했다. 그는 항복 협상에 응했다.</p>
+
+<p>1187년 10월 2일, 예루살렘이 항복했다. 그날은 공교롭게도 이슬람력으로 예언자 무함마드가 밤에 예루살렘에서 승천했다고 전해지는 <strong>이스라와 미라지</strong>의 기념일과 가까웠다. 살라딘은 도시에 입성하면서 조건을 내걸었다. 모든 기독교인은 일정한 몸값을 내면 자유롭게 도시를 떠날 수 있게 한 것이다. 남자는 금화 열 닢, 여자는 다섯 닢, 아이는 한두 닢이었다. 그러나 가난해서 몸값을 낼 수 없는 이들이 수천에 달했다.</p>
+
+<figure class="wide"><img src="images/Saladin_enters_Jerusalem.jpg" alt="살라딘의 예루살렘 입성"><figcaption><b>살라딘의 예루살렘 입성(1187)</b> · 후대의 역사 회화. 피의 학살 없이 성도를 받아들인 이 장면은 동·서 양쪽 모두의 기억에 깊이 새겨졌다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>여기서 살라딘의 진면목이 드러난다. 그는 몸값을 낼 수 없는 가난한 이들을 노예로 끌고 가는 대신, 자기 사재로 그들의 자유를 사들였다. 그의 동생 <strong>알아딜</strong>은 천 명의 몸값을 자기 몫으로 풀어 주기를 청했고, 예루살렘 총대주교와 귀족들이 떠나면서도 보석과 황금을 챙기는 것을 본 살라딘의 부하들이 분개했음에도, 그는 약속을 지켜 그들을 보내 주었다. 사료에 따라 수만 명이 이렇게 자유를 얻었다고 전한다. 정복자가 자기 돈을 들여 패자의 자유를 사 준 이 장면은, 당대의 전쟁 관습에서 거의 유례를 찾기 어려운 것이었다.</p>
+
+<p>이 너그러움의 무게는 정확히 팔십팔 년 전의 기억과 대비할 때 드러난다. <strong>1099년</strong> 제1차 십자군이 예루살렘을 함락했을 때, 그들은 도시의 무슬림과 유대인을 무차별 학살했다. 라틴 측 종군 기록 『프랑크인의 행적』조차 "솔로몬 성전 구역에서 우리 병사들이 발목까지 핏물에 잠겨 말을 몰았다"고 적었다. 같은 도시, 같은 정복, 그러나 정반대의 선택이었다. 학살은 두 세기에 걸친 증오를 낳았고, 자비는 천 년에 걸친 존경을 낳았다.</p>
+
+<p>살라딘의 자비가 순전히 도덕적 충동만은 아니었다는 점도 짚어야 한다. 그것은 깊은 정치적 계산이기도 했다. 만약 그가 1099년의 십자군처럼 학살을 자행했다면, 이후 모든 십자군 도시는 항복 대신 결사 항전을 택했을 것이다. 항복하면 어차피 죽으리라는 공포가 적의 저항을 극단으로 몰아가기 때문이다. 반대로 '항복하면 목숨과 자유를 보장받는다'는 평판은, 다음 도시들의 항복을 훨씬 쉽게 만들었다. 실제로 하틴 이후 많은 십자군 도시가 큰 저항 없이 성문을 연 데에는, 살라딘의 관대함에 대한 신뢰가 작용했다. 자비가 곧 가장 효율적인 정복 전략이기도 했던 것이다. 도덕과 실용이 한 점에서 만난, 드문 통치의 사례다.</p>
+
+<p>하틴의 승리가 남긴 또 하나의 의미는, 그것이 한 통합 사업의 결산이었다는 점이다. 십이 년에 걸쳐 묶어 낸 이집트·시리아·자지라의 군대가 처음으로 한 전장에 한 깃발 아래 모였고, 그 통합의 힘이 곧장 결정적 전과로 이어졌다. 만약 무슬림 세계가 여전히 분열되어 있었다면 이만의 십자군을 단 하루에 절멸시키는 일은 불가능했을 것이다. 그런 의미에서 하틴은 1187년 7월의 전투인 동시에, 1169년 이집트 장악에서 시작된 긴 준비의 마지막 한 수였다. 오랜 인내가 한순간에 응축되어 폭발한 것이다. 토대를 다지는 데 들인 십수 년이 단 하루의 결정적 승리로 보상받은 이 장면은, 큰일을 도모하는 모든 이에게 시사하는 바가 크다.</p>
+
+<p>그럼에도 이 너그러움을 깎아내려서는 안 된다. 동생 알아딜이 천 명, 총대주교가 일부, 그리고 살라딘 자신이 수천 명의 가난한 이를 사재로 풀어 준 것은 어떤 전략적 계산으로도 다 설명되지 않는다. 사료들은 떠나는 피란민 행렬이 끝없이 이어졌고, 그 가운데 노약자와 과부, 고아가 가득했다고 전한다. 한 정복자가 패자의 가장 약한 이들에게 베푼 이 구체적 자비는, 추상적 관용론을 넘어 한 인간의 품성을 증언한다. 후세 유럽이 그를 미워하기보다 흠모하게 된 결정적 이유가 바로 여기에 있었다.</p>
+
+<p>몸값을 둘러싼 한 장면은 특히 오래 기억되었다. 예루살렘 총대주교 헤라클리우스는 막대한 교회의 금은보화를 수레에 싣고 도시를 떠나면서도, 정작 가난한 신자들의 몸값은 외면했다. 살라딘의 부하들이 분개하여 그 보물을 압수하고 그것으로 가난한 이들을 풀어 주자고 했으나, 살라딘은 합의한 조건을 지켜 총대주교를 보내 주었다. 약속을 어기느니 차라리 손해를 감수하겠다는 태도였다. 적의 위선 앞에서도 자신의 신의를 굽히지 않은 이 일화는, 그의 관용이 단순한 너그러움이 아니라 원칙에서 나온 것임을 보여 준다. 사료들은 떠나는 기독교 측 인사들의 인색함과 살라딘 측의 관대함을 나란히 놓아, 두 진영의 도덕적 대비를 선명하게 새겨 두었다.</p>
+
+<p>예루살렘 탈환은 살라딘 개인에게도 평생의 종교적 사명이 완성되는 순간이었다. 그가 자라난 다마스쿠스의 지하드 분위기, 누르 알딘이 뿌린 성도 회복의 꿈, 그리고 그 자신이 평생 내건 명분이 모두 이 한 도시에서 결실을 맺었다. 사료들은 그가 입성 후 알아크사 모스크에서 처음으로 금요 예배를 올릴 때, 설교가가 "신께서 당신의 손으로 이 성스러운 집을 정결케 하셨다"고 외치자 군중이 눈물을 흘렸다고 전한다. 1099년 이래 팔십팔 년간 십자군의 손에 있던 이슬람 제3의 성지가 다시 무슬림의 예배 소리로 채워진 것이다. 그러나 살라딘은 이 승리의 순간에도 자만하지 않았다. 그는 곧바로 다가올 유럽의 반격 — 제3차 십자군 — 을 예견하고 해안 방어를 점검하기 시작했다.</p>
+
+<p>예루살렘의 평화로운 접수는 이슬람과 기독교 양쪽의 집단 기억에 깊은 자국을 남겼다. 무슬림에게 그것은 잃었던 성지의 회복이자 지하드의 가장 빛나는 성취였고, 기독교에게는 뼈아픈 상실인 동시에 적장의 의외의 관대함에 대한 당혹스러운 경험이었다. 십자군 측 연대기들은 도시를 잃은 슬픔을 토로하면서도, 학살 없이 떠날 수 있게 해 준 살라딘의 처분만큼은 인정하지 않을 수 없었다. 한 사건이 적과 아군 양쪽 모두에게 깊은 인상을 남기되 정반대의 감정으로 기억되는 일은 드물다. 1187년의 예루살렘은 바로 그런 사건이었고, 그 양면성이야말로 이 도시가 천 년이 지나도록 화해와 분쟁의 상징으로 남는 까닭이다.</p>
+
+<p>한 가지 덧붙이면, 살라딘은 성도를 되찾은 뒤 그곳을 단순한 군사 점령지로 두지 않고 신앙과 학문의 중심으로 되살리려 했다. 그는 십자군이 교회로 바꾸어 놓았던 이슬람 성소들을 복원하고, 동시에 기독교의 성묘 교회는 파괴하지 않고 보존했다. 다만 그 관리권을 조정해 기독교 순례가 질서 있게 이어지도록 했다. 정복자가 패배한 종교의 가장 성스러운 장소를 보전했다는 사실은, 그의 통치 철학이 말살이 아니라 공존에 있었음을 보여 준다. 이 공존의 원칙은 이후 수백 년간 예루살렘이 세 종교의 도시로 살아남는 밑바탕이 되었다.</p>
+
+<figure class="portrait"><img src="images/Saladin_the_Victorious.jpg" alt="승리자 살라딘 판화"><figcaption><b>승리자 살라딘</b> · 귀스타브 도레, 십자군 연작 판화. 19세기 유럽조차 그를 '고결한 적장'의 표상으로 그렸다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<div class="aside-story"><h5>곁가지 1 — 성소를 씻은 장미수</h5>
+<p>입성한 살라딘은 십자군이 모스크로 쓰던 알아크사와 바위의 돔을 다시 이슬람 성소로 되돌렸다. 전승에 따르면 그는 다마스쿠스에서 가져온 장미수로 바위의 돔 내부를 씻게 하고, 누르 알딘이 생전에 미리 깎아 둔 정교한 목제 설교단(민바르)을 알아크사 모스크에 옮겨 세웠다고 한다. 이 민바르는 칠백여 년을 그 자리에 있다가, 1969년 한 방화로 소실되었다. 한 정복자의 경건의 상징이 현대의 방화로 사라진 셈이다.</p>
+<p class="src">[Source] 이마드 알딘 알이스파하니, 예루살렘 입성 기록; 알아크사 모스크 사료.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 떠나는 자들을 위한 호위</h5>
+<p>살라딘은 도시를 떠나는 기독교 피란민 행렬을 약탈자로부터 지켜 주기 위해 무슬림 기병에게 호위를 맡겼다고 전한다. 또한 떠나는 동방 정교회·시리아 교회 신자들 가운데 일부에게는 도시에 남아 신앙을 지키며 살 것을 허락했다. 정복지에서 패자의 종교 공동체를 보전한 이 조치는, 이후 예루살렘이 다종교 도시로 존속하는 토대가 되었다는 평가를 받는다.</p>
+<p class="src">[Source] 바하 알딘 『진귀한 기록』; A.-M. Eddé, *Saladin*, 예루살렘 장.</p></div>
+
+<div class="world-context"><h5>서유럽</h5><p>예루살렘 함락 소식은 유럽 전역을 뒤흔들었다. 잉글랜드와 프랑스는 '살라딘 십일조'라는 특별세를 거둬 십자군 자금을 마련했고, 세 명의 군주가 직접 십자가를 짊어지기로 맹세했다.</p>
+<h5>일본</h5><p>같은 시기 일본 열도에서는 1185년 단노우라 해전으로 헤이케 일족이 멸망하고, 미나모토노 요리토모가 무사 정권 — 가마쿠라 막부 — 의 토대를 놓고 있었다. 동서 양끝에서 새로운 권력 질서가 함께 태어나고 있었다.</p></div>
+</article>
+
+<section class="campaign-map" aria-labelledby="map3-title">
+<div class="map-head"><h3 class="map-title" id="map3-title">Tabula III · 성도와 해안의 줄다리기</h3><p class="map-subtitle">하틴·예루살렘·제3차 십자군 1187–1192</p></div>
+<svg viewBox="0 0 920 680" xmlns="http://www.w3.org/2000/svg" class="campaign-svg" role="img" aria-label="하틴 전투와 제3차 십자군 지도">
+<rect class="sea" x="0" y="0" width="920" height="680"/>
+<text class="sea-label" x="120" y="200">MARE MEDITERRANEVM</text>
+<!-- 내륙: 살라딘 권역 -->
+<path class="conquered" d="M380,120 L640,120 L760,260 L740,480 L600,600 L460,560 L420,400 L380,260 Z"/>
+<!-- 해안: 십자군 잔존 -->
+<path class="farthest" d="M300,200 L380,180 L400,300 L420,440 L380,540 L300,520 L280,360 Z"/>
+<text class="region-label" x="540" y="320">SYRIA · PALAESTINA</text>
+<!-- 행군로: 아크레 -> 야파 (리처드) -->
+<path class="route-naval" d="M330,250 C320,340 330,420 350,500"/>
+<!-- 도시 -->
+<circle class="capital" cx="430" cy="430" r="6"/><text class="city-label" x="440" y="426">Jerusalem</text><text class="city-label-kr" x="440" y="442">예루살렘</text>
+<circle class="city" cx="335" cy="250" r="5"/><text class="city-label" x="250" y="246">Acre</text><text class="city-label-kr" x="250" y="262">아크레</text>
+<circle class="city" cx="350" cy="500" r="5"/><text class="city-label" x="358" y="496">Jaffa</text><text class="city-label-kr" x="358" y="512">야파</text>
+<circle class="city" cx="345" cy="560" r="4"/><text class="city-label" x="353" y="575">Ascalon</text>
+<circle class="capital" cx="560" cy="200" r="6"/><text class="city-label" x="568" y="196">Damascus</text><text class="city-label-kr" x="568" y="212">다마스쿠스</text>
+<circle class="city" cx="455" cy="330" r="4"/><text class="city-label" x="463" y="326">Tiberias</text>
+<!-- 전투: 하틴, 아르수프 -->
+<text class="battle-x" x="449" y="335">⊗</text><circle class="battle-ring" cx="455" cy="330" r="11"/><text class="year-marker" x="463" y="348">Hattin 1187</text>
+<text class="battle-x" x="324" y="385">⊗</text><circle class="battle-ring" cx="330" cy="380" r="11"/><text class="year-marker" x="250" y="378">Arsuf 1191</text>
+<text class="neighbor-label" x="600" y="500">AYYUBID SULTANATE</text>
+<text class="neighbor-label" x="250" y="320">CRUSADER COAST</text>
+</svg>
+<div class="map-legend"><span><i class="lg-conquered"></i> 아이유브 내륙 권역</span><span><i class="lg-farthest"></i> 십자군 잔존 해안</span><span><i class="lg-route"></i> 리처드 해안 진군(1191)</span><span><i class="lg-battle"></i> 주요 전투</span></div>
+<p class="map-caption">하틴으로 내륙을 휩쓴 살라딘, 제3차 십자군으로 해안을 되찾은 리처드. 1192년 라믈라 휴전은 그 줄다리기가 남긴 균형점이었다 — 예루살렘은 무슬림에게, 해안은 십자군에게.</p>
+</section>
+
+<article class="chapter" id="ch7"><header class="chapter-head"><div class="chapter-num">VII</div><div class="chapter-title"><div class="when">AD 1189–1192 · 팔레스타인 해안</div><h2>리처드 사자심왕 — 만나지 않은 두 적수</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch07_리처드.mp3"></audio></div>
+<p class="lead">두 사람은 끝내 한 번도 얼굴을 마주하지 않았다. 그러나 서로를 죽이려 하면서, 동시에 서로를 돌보았다.</p>
+
+<p class="dropcap">예루살렘 함락은 유럽을 깨워 일으켰다. 교황의 호소에 세 강대국의 군주가 직접 십자가를 졌다. 신성 로마 제국 황제 <strong>프리드리히 1세 바르바로사</strong>, 프랑스 왕 <strong>필리프 2세 오귀스트</strong>, 그리고 잉글랜드 왕 <strong>리처드 1세</strong> — 사자심왕(Cœur de Lion)이었다. 그러나 제3차 십자군은 시작부터 어그러졌다. 가장 강력한 군세를 이끌던 늙은 황제 바르바로사가 1190년 소아시아의 한 강(살레프강)을 건너다 익사한 것이다. 그의 대군은 지도자를 잃고 흩어졌다. 프랑스 왕 필리프는 아크레 함락 뒤 곧 본국으로 돌아갔다. 결국 살라딘의 진짜 맞수로 남은 이는 리처드 한 사람이었다.</p>
+
+<p>두 사람의 대결은 이 년에 걸쳐 팔레스타인 해안을 따라 펼쳐졌다. 1191년 십자군은 길고 처절한 공성 끝에 <strong>아크레</strong>를 탈환했다. 이어 리처드는 군대를 이끌고 해안을 따라 남하했는데, 살라딘은 끊임없이 측면을 괴롭히며 그를 지치게 하려 했다. 두 군대가 정면으로 부딪친 <strong>아르수프(Arsuf) 전투</strong>(1191.9)에서 리처드는 기병 돌격의 시점을 절묘하게 조율해 살라딘에게 패배를 안겼다. 이 패배로 살라딘은 야전에서 리처드를 정면으로 꺾기는 어렵다는 것을 깨달았다. 그는 전략을 바꿔, 십자군이 예루살렘으로 가는 길의 성과 우물을 미리 파괴하는 청야(淸野) 전술로 맞섰다.</p>
+
+<figure class="wide"><img src="images/Krak_des_Chevaliers_05.jpg" alt="크라크 데 슈발리에"><figcaption><b>크라크 데 슈발리에(Krak des Chevaliers)</b> · 시리아. 구호기사단이 지킨 이 난공불락의 요새는 살라딘조차 끝내 함락하지 못했다. [Wikimedia · CC BY-SA]</figcaption></figure>
+
+<p>그러나 이 처절한 전쟁 속에서 두 사람은 기이한 상호 존경을 키웠다. 둘은 끝내 직접 대면하지 않았으나, 동생 <strong>알아딜</strong>을 비롯한 사절을 통해 끊임없이 서신과 선물을 주고받았다. 가장 유명한 일화 두 가지가 전한다. 하나, 아르수프에서였는지 다른 전투에서였는지, 리처드가 전투 중 말을 잃자 살라딘이 알아딜을 통해 두 마리의 명마를 보냈다는 것이다. 적장이 보병 신세로 싸우는 것은 기사도에 어긋난다는 이유였다. 둘, 리처드가 열병으로 앓아눕자 살라딘이 자신의 주치의를 보내고, 더운 사막에서 귀한 눈과 신선한 과일(배·복숭아)을 보내 그를 위문했다는 것이다.</p>
+
+<blockquote>그의 적들조차 그를 칭송했으니, 그는 자비롭고 신의가 있으며 약속을 어기는 법이 없었다.
+<cite>바하 알딘 이븐 샤다드 『진귀한 기록』, 살라딘 인물평</cite></blockquote>
+
+<p>이 일화들은 십자군 측 기록과 무슬림 측 기록 양쪽에 흩어져 전하므로 세부는 윤색되었을 수 있다. 그러나 두 적장이 서로를 단순한 야만의 적이 아니라 명예로운 호적수로 인정했다는 큰 흐름은 양측 사료가 공유한다. 살라딘이 리처드를 두고 "그가 무모하지만 않다면 이 시대 가장 위대한 군주가 되었을 것"이라 평했다는 이야기도 전한다.</p>
+
+<p>두 사람의 대결은 단순한 무력 충돌이 아니라 두 가지 전쟁 철학의 충돌이기도 했다. 리처드는 한 번의 결정적 회전(會戰)으로 적을 분쇄하려는 서구 기사의 전형이었다. 그는 정면 돌격의 타이밍에 천재적이었고, 아르수프에서 그것을 증명했다. 반면 살라딘은 결전을 피하고 적을 소모시키는 동방의 전쟁술에 능했다. 그는 야전에서 리처드를 이기기 어렵다는 것을 인정한 뒤, 우물을 메우고 성을 허무는 청야 전술로 적의 진격 자체를 무의미하게 만들었다. 리처드가 예루살렘 코앞에서 두 번이나 발길을 돌린 것은, 바로 이 '점령해도 지킬 수 없다'는 살라딘의 전략이 만들어 낸 결과였다. 빛나는 전술가가 끈질긴 전략가에게 끝내 결정타를 먹이지 못한 것이다.</p>
+
+<p>아크레 공성을 둘러싼 한 가지 어두운 사건도 기록해야 한다. 1191년 아크레가 함락된 뒤, 리처드는 무슬림 포로 약 이천칠백 명을 몸값 협상이 지연되자 성 밖에서 집단 처형했다. 살라딘이 보복으로 십자군 포로를 처형하기도 했으나, 그 규모와 잔혹성에서 아크레의 학살은 두고두고 리처드의 명예에 그늘을 드리웠다. 두 적수의 상호 존경이라는 낭만적 서사 이면에, 전쟁의 잔혹한 현실 또한 분명히 존재했음을 이 사건은 일깨운다. 기사도의 시대에도 학살은 일어났고, 그 점에서 살라딘의 일관된 절제는 더욱 두드러진다.</p>
+
+<figure class="wide"><img src="images/Saladin_visiting_Richard.png" alt="살라딘이 병든 리처드를 위문하다"><figcaption><b>살라딘이 병든 리처드 1세를 위문하다</b> · 19세기 영국 삽화. 실제로 두 사람은 대면하지 않았으나, 적장에게 의사와 과일을 보낸 일화가 이렇게 시각화되었다. [Wikimedia · Public Domain]</figcaption></figure>
+
+<p>결국 두 사람 누구도 결정적 승리를 거두지 못했다. 리처드는 예루살렘 가까이 두 번 진군했으나, 설령 도시를 빼앗더라도 본국으로 돌아가면 지켜낼 수 없음을 알고 끝내 발길을 돌렸다. 본국에서는 동생 존이 왕권을 노리고 있었다. 1192년 9월, 두 사람은 마침내 <strong>라믈라 휴전(Treaty of Ramla)</strong>에 합의했다. 십자군은 야파에서 티레에 이르는 해안 도시들을 보유하고, 예루살렘은 무슬림의 손에 남되, 기독교 순례자들은 무장하지 않고 자유롭게 성도를 방문할 수 있게 한다는 내용이었다. 어느 쪽도 완전히 이기지 못한, 그러나 양쪽 모두 명예를 지킨 정직한 타협이었다.</p>
+
+<figure class="wide"><img src="images/Krak_des_Chevaliers_landscape__cropped_.jpg" alt="크라크 데 슈발리에 전경"><figcaption><b>크라크 데 슈발리에 전경</b> · 시리아 호메스 협곡을 굽어보는 십자군 요새. 두 세기 동안 동방에 남은 십자군의 건축적 유산이다. [Wikimedia · CC BY-SA]</figcaption></figure>
+
+<p>리처드와 살라딘의 관계가 후세에 그토록 회자된 데에는, 두 사람이 끝내 직접 만나지 않았다는 사실도 한몫했다. 만나지 않았기에 그 관계는 신화가 될 여지를 충분히 남겼다. 서신과 사절, 선물과 의사 — 모든 교류가 중개자를 거쳤고, 그 빈자리를 후세의 상상력이 채웠다. 만약 두 사람이 협상 천막에서 얼굴을 맞대고 흥정했다면, 그 인간적 마찰과 실망이 오히려 신화를 깨뜨렸을지 모른다. 거리가 존경을 키운 역설이다. 이렇게 '만나지 않은 두 적수'라는 구도 자체가, 적대와 존경이 공존하는 가장 이상적인 서사의 틀을 제공했다.</p>
+
+<p>라믈라 휴전은 그 자체로 살라딘 외교의 결정판이었다. 군사적으로 그는 더 이상 십자군을 바다로 밀어낼 힘이 남아 있지 않았고, 리처드 역시 예루살렘을 차지할 수 없었다. 두 사람 모두 자신의 한계를 냉정하게 인식했고, 그 인식 위에서 어느 쪽도 굴욕을 느끼지 않을 타협안을 만들어 냈다. 예루살렘은 무슬림이, 해안은 십자군이, 그리고 순례의 자유는 모두가 — 이 세 가지 원칙은 양측의 핵심 이익을 절묘하게 갈라 담았다. 완전한 승리에 대한 집착을 버리고 지속 가능한 균형을 택한 이 결정은, 끝없는 소모전을 멈추게 한 현명한 마침표였다. 이기지 못할 전쟁을 명예롭게 끝내는 법을 아는 것 또한 위대한 지도자의 자질임을, 이 휴전은 보여 준다.</p>
+
+<p>리처드는 휴전 직후 본국으로 돌아갔으나, 그를 기다린 것은 영광이 아니라 시련이었다. 귀국길에 오스트리아 공작에게 사로잡혀 신성 로마 황제에게 넘겨졌고, 잉글랜드는 왕을 되찾기 위해 막대한 몸값을 짜내야 했다. 한편 살라딘은 휴전으로 비로소 십수 년의 전쟁에서 손을 떼고 다마스쿠스로 돌아갈 수 있었다. 두 적수의 운명은 휴전을 기점으로 갈렸다. 한 사람은 쇠사슬에 묶여 몸값을 흥정당했고, 다른 한 사람은 고향에서 마지막 안식을 준비했다. 라믈라에서 맺은 그 약속이, 두 영웅 시대의 사실상 마지막 장이었던 셈이다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 두 마리의 말</h5>
+<p>리처드에게 말을 보낸 일화는 후대 유럽 기사도 문학에서 가장 즐겨 인용된 장면이 되었다. 일부 판본은 그 무대를 야파 전투(1192)로, 다른 판본은 아르수프로 전한다. 무대와 세부는 엇갈리지만, '적장이 도보로 싸우는 것을 차마 두고 볼 수 없어 명마를 보냈다'는 핵심은 한결같다. 이 행위는 단순한 호의가 아니라, 전쟁에도 지켜야 할 품격이 있다는 두 군주 사이의 무언의 합의였다. 적을 죽이되 적을 모욕하지는 않는다는 — 오늘날의 표현으로 하면 일종의 '교전 규칙'의 원형이었던 셈이다.</p>
+<p class="src">[Source] 십자군 측 『순례자 여정기(Itinerarium Peregrinorum)』; 무슬림 측 바하 알딘 기록의 교차.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 혼인으로 끝낼 뻔한 전쟁</h5>
+<p>협상 과정에서 리처드는 놀라운 제안을 내놓았다고 전한다. 자신의 누이 조앤(Joan)을 살라딘의 동생 알아딜과 혼인시키고, 그 부부에게 예루살렘을 공동 통치하게 하자는 것이었다. 종교의 벽을 결혼으로 허물어 성도를 나누려는 발상이었다. 그러나 양측 종교계의 반발과 누이 조앤 본인의 거부로 무산되었다. 진심이었는지 협상용 카드였는지는 논란이 있으나, 이 일화는 두 진영이 단순한 증오를 넘어 현실적 타협을 모색했음을 보여 준다.</p>
+<p class="src">[Source] 바하 알딘 『진귀한 기록』; 십자군 협상 기록; S. Runciman, *A History of the Crusades* III권.</p></div>
+
+<div class="factbox"><h4>제3차 십자군 1189–1192</h4>
+<ul>
+<li><b>3대 군주</b>바르바로사·필리프 2세·리처드 1세</li>
+<li><b>바르바로사</b>1190 살레프강에서 익사</li>
+<li><b>핵심 전투</b>아크레 공성(1191)·아르수프(1191)</li>
+<li><b>리처드의 한계</b>예루살렘 코앞에서 회군</li>
+<li><b>종결</b>라믈라 휴전 (1192.9)</li>
+<li><b>결과</b>해안은 십자군, 성도는 무슬림</li>
+</ul></div>
+
+<div class="world-context"><h5>잉글랜드</h5><p>리처드는 귀국길에 오스트리아에서 사로잡혀 막대한 몸값을 치르고서야 풀려났다. 그가 자리를 비운 사이 동생 존이 왕권을 흔들었으니, 십자군의 영광 뒤에는 본국의 정치 위기가 그림자처럼 따라붙었다.</p>
+<h5>중앙아시아</h5><p>호라즘 제국이 셀주크의 잔재를 흡수하며 동방의 새 강자로 떠오르던 시기. 한 세대 뒤 이 호라즘이 칭기즈 칸의 몽골과 충돌해 멸망하게 된다.</p></div>
+</article>
+
+<article class="chapter" id="ch8"><header class="chapter-head"><div class="chapter-num">VIII</div><div class="chapter-title"><div class="when">AD 1193년 3월 4일 · 다마스쿠스</div><h2>다마스쿠스의 마지막 일주일</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch08_마지막.mp3"></audio></div>
+<p class="lead">반평생 나라의 부를 주물렀던 술탄이 죽었을 때, 그의 금고에는 장례 비용조차 모자랐다.</p>
+
+<p class="dropcap">리처드와의 휴전 뒤 살라딘은 다마스쿠스로 돌아왔다. 십수 년의 끊임없는 원정으로 그의 몸은 이미 지쳐 있었다. 1193년 2월 말, 그는 한 차례 열병에 걸렸다. 처음에는 가벼운 듯했으나 병세는 빠르게 악화되었다. 측근들이 둘러선 가운데 그는 며칠을 앓다가, 3월 4일 새벽에 다마스쿠스에서 숨을 거두었다. 향년 약 쉰여섯. 임종을 지킨 비서 바하 알딘은 그 마지막 날들을 곁에서 기록으로 남겼다. 도시 전체가 깊은 애도에 잠겼고, 학자 한 사람이 그의 머리맡에서 꾸란의 한 구절 — "그분 외에 신은 없으며, 나는 그분께 의지하노라" — 을 읊자 살라딘의 얼굴에 평온한 미소가 번졌다고 전한다.</p>
+
+<p>그의 죽음 뒤 드러난 한 가지 사실이 그의 평생을 압축한다. 이집트와 시리아의 부를 반평생 주물렀던 이 술탄이 개인적으로 남긴 재산은 <strong>금화 한 닢과 은화 마흔일곱 닢</strong>이 전부였다. 집도, 정원도, 사유지도 없었다. 그가 거두어들인 모든 것을 군대의 봉급, 자선, 모스크와 병원과 학교의 건립에 쏟아부었기 때문이다. 그의 장례를 치를 비용조차 모자라 측근들이 돈을 빌려 와야 했다고 전한다. 한 시대의 가장 강력한 군주가 무일푼으로 세상을 떠난 것이다.</p>
+
+<blockquote>그는 막대한 부를 손에 쥐었으나, 그 부는 늘 그의 손가락 사이로 흘러나가 가난한 자에게로 갔다. 그가 남긴 것은 금화 한 닢과 은화 마흔일곱 닢뿐이었다.
+<cite>바하 알딘 이븐 샤다드 『진귀한 기록』, 살라딘의 죽음</cite></blockquote>
+
+<p>그의 무덤은 다마스쿠스의 <strong>우마이야 모스크</strong> 북쪽에 마련되었다. 처음에는 소박한 목관에 안치되었다. 이 무덤은 그 자체로 또 한 번 후세 정치의 무대가 된다. 1898년, 독일 황제 <strong>빌헬름 2세</strong>가 오스만 제국을 순방하던 길에 이 무덤을 찾았다. 그는 무슬림 세계의 환심을 사기 위해, 살라딘을 "역사상 가장 기사도적인 군주"로 추켜세우며 무덤 위에 청동 월계관과 새 대리석 석관을 헌정했다. 그러나 그로부터 이십 년 뒤 제1차 세계대전에서 영국군이 다마스쿠스에 입성했을 때, 영국 장교 T. E. 로런스(아라비아의 로런스)가 그 독일 황제의 청동 화환을 떼어 전리품으로 가져갔다고 전한다. 한 정복자의 무덤조차 근대 제국주의 외교의 소도구가 된 셈이다.</p>
+
+<p>살라딘이 세운 <strong>아이유브 왕조</strong>는 그의 죽음과 함께 시험에 들었다. 그는 제국을 한 사람에게 물려주지 않고, 여러 아들과 동생에게 이집트·다마스쿠스·알레포 등으로 나누어 맡겼다. 이 분권적 상속은 곧 내분을 불렀고, 동생 알아딜이 다시 권력을 통합했으나 왕조의 응집력은 예전 같지 않았다. 결국 약 칠십 년 뒤인 1250년대, 아이유브 왕조는 자신들이 거느렸던 노예 군인 집단 <strong>맘루크</strong>에게 권력을 넘기게 된다. 그러나 살라딘이 이룬 가장 큰 유산 — 이집트와 시리아를 하나로 묶은 정치적 통합 — 은 그 이름이 바뀐 뒤에도 근동 질서의 기준으로 살아남았다.</p>
+
+<p>그가 자신의 비서 바하 알딘에게 남긴 인상은 이후 모든 살라딘상(像)의 원천이 되었다. 바하 알딘은 술탄의 죽음을 기록하며, 그가 평생 정해진 다섯 번의 예배를 거른 적이 거의 없었고, 병중에도 꾸란 낭송을 들으며 위안을 얻었으며, 거친 말이나 잔인한 처사를 좀처럼 보이지 않았다고 적었다. 그는 또 살라딘이 어린아이의 죽음을 슬퍼하는 어머니의 청을 듣고 적진에서 잃어버린 아이를 찾아 돌려보냈다는 일화도 전한다. 충직한 비서의 기록인 만큼 미화의 여지를 감안해야 하지만, 적대적이던 사가들조차 그의 청빈과 신의만큼은 부정하지 않았다는 점에서, 이 초상에는 단순한 윤색을 넘는 진실의 핵이 담겨 있다.</p>
+
+<p>살라딘의 죽음을 전해 들은 적국 유럽의 반응 또한 의미심장하다. 그를 가장 두려워했던 십자군 세계조차 그의 부고에 적개심보다 일종의 경의를 표했다. 그가 떠난 뒤 한 세대도 지나지 않아 유럽의 음유시인과 연대기 작가들은 그를 '가장 고결한 사라센'으로 노래하기 시작했고, 그 전설은 시간이 갈수록 커졌다. 적이 죽었을 때 안도하는 대신 애도하는 — 이 드문 현상이야말로 한 인간이 도달할 수 있는 명예의 가장 높은 봉우리일 것이다. 살라딘은 살아서 예루살렘을 얻었고, 죽어서 적의 존경을 얻었다.</p>
+
+<p>그의 분권적 상속이 남긴 결과도 짚어 둘 만하다. 그는 제국을 한 사람에게 몰아주는 대신 형제와 아들들에게 이집트·다마스쿠스·알레포로 나누어 맡겼다. 이는 냉혹한 권력 집중의 논리와는 거리가 멀었고, 결과적으로 아이유브 제국의 응집력을 약화시켰다. 한 인간으로서의 미덕 — 혈육에 대한 신뢰와 너그러움 — 이 통치자로서는 약점이 된 역설이다. 위대한 정복자가 반드시 위대한 제국 설계자는 아니었다는 이 한계는, 오히려 그의 인간적 면모를 더 또렷이 드러낸다. 그는 끝까지 차가운 계산보다 따뜻한 신의를 택한 사람이었고, 그 선택이 제국에는 손해였을지언정 그의 이름에는 영광이 되었다.</p>
+
+<p>그의 무덤을 둘러싼 후일담은 한 영웅의 사후가 어떻게 정치의 무대가 되는가를 잘 보여 준다. 다마스쿠스 우마이야 모스크 곁의 그의 영묘에는 두 개의 관이 나란히 놓여 있다. 하나는 그가 처음 안치된 소박한 목관이고, 다른 하나는 1898년 독일 황제 빌헬름 2세가 헌정한 화려한 대리석 석관이다. 정작 살라딘의 유해는 여전히 소박한 목관에 머물러 있다고 전한다. 평생을 청빈으로 살다 간 술탄에게는 화려한 대리석보다 그 낡은 나무관이 더 어울린다는 듯이. 두 개의 관은 그를 둘러싼 두 겹의 기억 — 검소했던 실제의 인간과, 후세가 덧입힌 영광의 상징 — 을 그대로 형상화하고 있다.</p>
+
+<p>살라딘의 마지막 나날을 곁에서 지킨 바하 알딘의 기록은, 권력의 정점에 섰던 한 인간이 어떻게 죽음을 맞았는가를 담담하게 전한다. 그는 화려한 궁전이 아니라 다마스쿠스의 거처에서, 측근들과 학자들에게 둘러싸여 조용히 숨을 거두었다. 임종의 자리에서 그는 새로운 정복을 꿈꾸지도, 권력의 미래를 놓고 다투지도 않았다. 다만 신앙 속에서 평온히 마지막 숨을 내려놓았을 뿐이다. 한 시대를 호령한 정복자의 죽음이 이토록 소박했다는 사실은, 그의 생애 전체를 관통한 절제와 경건이 마지막 순간까지 흐트러지지 않았음을 보여 준다. 그가 남긴 것은 거대한 영토가 아니라 하나의 본보기, 곧 가장 강한 자리에서도 가장 겸허할 수 있다는 본보기였다.</p>
+
+<p>살라딘의 죽음은 또한 한 시대의 종막을 알리는 신호였다. 그가 떠난 뒤 십자군 시대는 여전히 한 세기를 더 이어졌으나, 하틴 이전의 십자군 국가가 누렸던 내륙의 영토는 끝내 회복되지 못했다. 예루살렘은 1229년 프리드리히 2세의 외교로 잠시 기독교에 돌아갔다가 다시 무슬림 손에 들어갔고, 1291년 아크레 함락으로 동방의 십자군 국가는 완전히 소멸한다. 살라딘이 하틴에서 꺾은 것은 한 왕국의 군대였지만, 그가 무너뜨린 것은 사실 십자군 운동 전체의 등뼈였던 셈이다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 빌헬름 2세의 화환과 로런스</h5>
+<p>독일 황제 빌헬름 2세가 1898년 헌정한 청동 월계관에는 "한 황제가 다른 황제에게"라는 명문이 새겨져 있었다고 한다. 이는 독일이 오스만과 손잡고 영국·프랑스에 맞서려는 '범이슬람 외교'의 일환이었다. 제1차 세계대전 말 영국군의 다마스쿠스 점령(1918) 뒤 이 화환은 사라졌고, 오늘날 런던의 제국 전쟁 박물관에 그 일부가 소장되어 있다고 전한다. 화환을 떼어 간 인물로 T. E. 로런스가 지목되나, 정확한 경위는 사료에 따라 엇갈린다. 다만 한 무슬림 영웅의 무덤이 근대 강대국들의 상징 전쟁터가 되었다는 사실만은 분명하다.</p>
+<p class="src">[Source] 빌헬름 2세 시리아 순방 기록(1898); T. E. Lawrence 관련 사료; 제국 전쟁 박물관 소장 정보.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 무일푼 술탄의 회계</h5>
+<p>'금화 한 닢, 은화 마흔일곱 닢'이라는 구체적 숫자는 바하 알딘의 기록에서 나온 것으로, 살라딘의 청빈을 증명하는 가장 유명한 일화가 되었다. 물론 이는 어디까지나 그의 '사적 재산'에 관한 기록이며, 국가 재정과는 별개다. 또한 충직한 비서가 군주의 미덕을 부각하려 강조한 면도 감안해야 한다. 그럼에도 그가 사재를 거의 남기지 않았다는 점은 적대적이던 이븐 알아시르마저 부정하지 않았다는 점에서, 단순한 미화로만 보기는 어렵다.</p>
+<p class="src">[Source] 바하 알딘 『진귀한 기록』; 이븐 알아시르 『완전한 역사』의 부고 논평.</p></div>
+
+<div class="factbox"><h4>살라딘의 최후</h4>
+<ul>
+<li><b>사망</b>1193.3.4 다마스쿠스, 열병</li>
+<li><b>향년</b>약 56세</li>
+<li><b>사적 재산</b>금화 1닢 + 은화 47닢</li>
+<li><b>안식처</b>우마이야 모스크 영묘</li>
+<li><b>왕조 운명</b>분권 상속 → 1250년대 맘루크에 승계</li>
+<li><b>최대 유산</b>이집트·시리아의 정치적 통합</li>
+</ul></div>
+
+<div class="world-context"><h5>유럽</h5><p>살라딘이 죽은 1193년, 리처드는 아직 오스트리아·독일의 포로 신세였다. 두 적수 가운데 한 사람은 무일푼으로 눈을 감고, 다른 한 사람은 쇠사슬에 묶여 몸값을 흥정당하고 있었다. 영광의 시대가 함께 저물고 있었다.</p>
+<h5>인도</h5><p>같은 시기 북인도에서는 고르 왕조의 무함마드 고리가 1192년 타라인 전투에서 승리해, 이슬람 세력이 인도 아대륙 깊숙이 진출하는 델리 술탄국의 토대를 놓고 있었다.</p></div>
+</article>
+
+<article class="chapter" id="ch9"><header class="chapter-head"><div class="chapter-num">IX</div><div class="chapter-title"><div class="when">Alia visione · 후세의 거울</div><h2>다른 시선 — 단테, 스콧, 그리고 후세의 거울</h2></div></header>
+<div class="chapter-audio"><span class="audio-label">강의 듣기</span><audio controls preload="none" src="audio_scripts/mp3/ch09_다른_시선.mp3"></audio></div>
+<p class="lead">적이 적을 영웅으로 기억하는 일은 흔치 않다. 살라딘은 그 드문 일이 어떻게 일어나는가를 보여 주는 가장 큰 사례다.</p>
+
+<p class="dropcap">한 인물의 진짜 크기는 그를 미워할 이유가 가장 많은 사람들이 그를 어떻게 기억하는가에서 드러난다. 살라딘은 십자군의 가장 큰 적이었다. 그는 예루살렘을 빼앗았고, 수많은 기사를 죽였다. 그런데도 그를 가장 높이 떠받든 것은 다름 아닌 그의 적, 곧 중세와 근대의 유럽이었다. 이 마지막 장은 살라딘이 사후 팔백 년 동안 어떻게 여러 거울에 비쳐 왔는가를 따라간다.</p>
+
+<p>한 가지 먼저 분명히 해 둘 것이 있다. 우리가 떠올리는 '관대하고 기사도적인 살라딘'은 상당 부분 그의 적이었던 유럽이 빚어낸 이미지라는 점이다. 동시대 무슬림 사료들은 그를 무엇보다 지하드의 영웅이자 신앙의 수호자로 그렸지, '낭만적 기사'로 그리지 않았다. 자비와 관용이라는 측면을 특히 부각해 그를 신화화한 것은 오히려 중세 후기와 근대의 서구 문학이었다. 따라서 살라딘의 초상에는 두 겹이 있다. 사료가 전하는 경건하고 절제된 통치자라는 역사적 실상과, 후세가 덧입힌 '고결한 사라센'이라는 문학적 신화다. 이 둘을 구분하면서도, 두 초상이 모두 '적조차 그를 존경했다'는 한 가지 사실에서 출발한다는 점을 놓치지 않는 것이 중요하다.</p>
+
+<p>살라딘 신화가 유럽에서 그토록 끈질기게 살아남은 데에는 한 가지 역설적인 이유가 있다. 적을 높일수록 그 적을 이긴 자신도 높아지기 때문이다. 십자군 세계는 예루살렘을 잃은 치욕을 견디기 위해, 자신들을 꺾은 상대를 '범상한 야만인'이 아니라 '고결한 군주'로 그려야 했다. 그래야 패배가 수치가 아니라 비극이 되고, 자신들의 분투가 헛되지 않은 것이 되기 때문이다. 이처럼 살라딘의 영웅화에는 패자 측의 자기 위안이라는 심리도 작용했다. 그러나 그런 동기가 있었다 해서 그 존경이 거짓이라 할 수는 없다. 윤색의 동기와 진실의 핵은 얼마든지 공존할 수 있으며, 살라딘의 경우 그 핵 — 자비와 신의 — 은 적의 사료에서도 거듭 확인되기 때문이다.</p>
+
+<p>오늘날 살라딘은 영화와 소설, 정치 연설과 교과서 속에서 끊임없이 되살아난다. 어떤 작품은 그를 평화의 사도로, 어떤 연설은 그를 저항의 깃발로 호명한다. 그 다양한 해석의 스펙트럼 자체가, 한 인물이 얼마나 풍부한 의미를 품을 수 있는가를 증언한다. 그러나 그 모든 해석을 가로질러 변하지 않는 한 가지가 있다. 그가 가장 강했을 때 가장 자제했다는 사실, 그리고 가장 미워해야 할 적조차 그를 미워하지 못했다는 사실이다. 권력은 사람을 거칠게 만들기 쉽고, 승리는 사람을 오만하게 만들기 쉽다. 살라딘은 그 두 가지 유혹을 평생 견뎌 낸 드문 인물이었고, 바로 그 점에서 그의 이야기는 시대와 종교를 넘어 지금도 울림을 갖는다.</p>
+
+<p>이 페이지에서 우리는 한 쿠르드 청년이 술탄이 되어 예루살렘을 되찾고, 적의 존경 속에 무일푼으로 눈을 감기까지의 긴 여정을 따라왔다. 그 여정의 마디마다 놓인 것은 거창한 정복의 기록이 아니라 작은 선택들이었다. 항복한 적에게 물 한 잔을 건넬 것인가, 가난한 포로의 몸값을 사재로 치를 것인가, 약속을 지킬 것인가 깰 것인가. 역사를 만드는 것은 결국 이런 순간의 선택이며, 살라딘은 그 순간마다 더 어렵고 더 너그러운 길을 택했다. 천 년 뒤의 우리가 그를 기억하는 까닭이 여기에 있다. 그의 칼이 아니라 그의 선택이, 한 사람을 영원한 이름으로 만들었다. 그리고 그 선택의 무게는, 우리 각자가 일상에서 마주하는 작은 결정들 속에서도 여전히 유효하다. 우리가 누군가를 이겼을 때 그를 어떻게 대하는가, 바로 그 한 번의 처신이 우리 자신이 어떤 사람인가를 결정하기 때문이다.</p>
+
+<p>그렇다면 동시대 무슬림 세계는 그를 어떻게 보았을까. 충직한 비서 바하 알딘과 이마드 알딘은 그를 신앙의 영웅으로 칭송했으나, 모술 출신의 이븐 알아시르는 시종 비판적이었다. 이븐 알아시르는 살라딘이 장기 가문의 정통 후계를 가로챘다고 보았고, 그의 지하드 명분 뒤에 개인적 야심이 있었다고 의심했다. 이렇게 같은 시대의 무슬림 사가들 사이에서도 평가가 갈렸다는 사실은, 살라딘이 결코 만장일치의 성인이 아니었음을 일깨운다. 그는 정치가였고, 정치가에게는 늘 적과 비판자가 따른다. 역사적 살라딘의 진면목은 이 상반된 증언들 사이 어딘가에, 곧 경건한 이상과 현실의 야심이 교차하는 지점에 있을 것이다.</p>
+
+<p>그럼에도 한 가지는 시대와 종교를 가로질러 일관된다. 그의 청빈과 신의에 대해서는 우호적인 사가도 적대적인 사가도 이견을 달지 않았다는 점이다. 적이 인정한 미덕만이 참된 미덕이라면, 살라딘의 자비와 정직은 가장 엄격한 검증을 통과한 셈이다. 그가 천 년의 시간을 건너 여전히 회자되는 까닭은, 그가 가장 강했던 순간에 가장 인간다웠기 때문이다. 권력의 정점에서 베푼 절제와 관용 — 그것이야말로 어떤 정복의 지도보다 오래 남는 유산이다.</p>
+
+<p>마지막으로, 살라딘의 이야기는 오늘날 중동을 이해하는 데에도 묵직한 울림을 남긴다. 예루살렘은 여전히 세 종교가 얽힌 분쟁의 한복판에 있고, 그 도시를 둘러싼 기억의 전쟁은 천 년 전과 다르지 않다. 어떤 이들은 살라딘을 '서구에 맞선 저항'의 상징으로, 또 어떤 이들은 '관용과 공존'의 상징으로 호명한다. 흥미로운 것은, 그가 보여 준 행동의 핵심이 정작 정복이 아니라 정복 이후의 처신에 있었다는 점이다. 그는 빼앗는 법보다 빼앗은 뒤에 어떻게 대하는가로 역사에 새겨졌다. 증오의 악순환을 끊는 일이 얼마나 어렵고 또 얼마나 값진지를, 한 쿠르드 술탄의 팔백 년 전 선택이 지금도 조용히 일깨우고 있다.</p>
+
+<p>역사를 돌아보면, 위대한 정복자는 많았으나 위대한 승자는 드물었다. 알렉산드로스도, 카이사르도, 칭기즈 칸도 광대한 땅을 손에 넣었다. 그러나 그들 가운데 패자의 마음까지 얻은 이는 많지 않았다. 살라딘이 특별한 까닭은 그가 단지 이겼기 때문이 아니라, 이긴 뒤에 어떻게 행동해야 하는가를 알았기 때문이다. 그는 칼로 도시를 빼앗았으되 자비로 사람을 얻었고, 전쟁으로 명예를 세웠으되 절제로 그것을 지켰다. 천 년이 지난 지금까지 그의 이름이 적과 아군 모두의 입에 오르내리는 것은, 바로 그 '승리 이후의 품격' 때문이다. 정복은 힘으로 이루어지지만, 그 정복을 영원한 것으로 만드는 것은 결국 인간다움이라는 사실 — 그것이 살라딘이 후세에 건넨 가장 깊은 가르침이다.</p>
+
+<p>물론 우리는 그를 신화로만 기억해서는 안 된다. 그는 잔혹한 시대를 살았고, 때로는 포로를 처형했으며, 권력을 위해 동료 무슬림과도 싸웠다. 그의 자비에는 정치적 계산이 섞여 있었고, 그의 통합에는 야심이 깃들어 있었다. 그러나 바로 그렇기에 그의 절제와 관용은 더욱 값지다. 성인(聖人)이 베푸는 자비가 아니라, 권력과 욕망의 한복판에 선 한 정치가가 스스로를 다스려 베푼 자비였기 때문이다. 완벽한 영웅이 아니라 불완전한 인간이 도달한 높이였기에, 살라딘의 이야기는 오늘을 사는 우리에게도 흉내 낼 수 있는 본보기로 남는다. 가장 강한 순간에 가장 인간다웠던 한 사람, 그것이 역사가 기억하는 살라딘이다.</p>
+
+<p>끝으로 한 가지를 덧붙이고 싶다. 살라딘의 생애는 출신이 운명을 결정하지 않는다는 것을 보여 주는 이야기이기도 하다. 변방 쿠르드 가문의 추방당한 아이가, 아랍과 튀르크가 지배하던 세계의 정점에 올랐다. 그는 혈통이나 가문의 후광이 아니라 능력과 신의로 그 자리에 닿았다. 그리고 정상에 오른 뒤에도 자신을 키운 절제와 경건을 버리지 않았다. 가장 낮은 곳에서 시작해 가장 높은 곳에 이르렀으되, 그 높이가 그를 바꾸지 못했다는 것 — 이것이야말로 한 인간이 보여 줄 수 있는 가장 어려운 일관성이다. 추방자의 수레에서 무일푼의 목관까지, 살라딘은 처음과 끝이 한결같았다. 그 한결같음이 그를 천 년의 영웅으로 만들었다.</p>
+
+<div class="aside-story"><h5>곁가지 1 — 단테의 림보에 선 무슬림</h5>
+<p>이탈리아 시인 단테는 『신곡』 「지옥편」 제4곡에서 살라딘을 특별한 자리에 세웠다. 죄를 짓지는 않았으나 세례를 받지 못해 천국에 들지 못한 '고결한 이교도들'의 거처, <strong>림보(Limbo)</strong>다. 그곳에는 호메로스, 소크라테스, 플라톤, 아리스토텔레스, 율리우스 카이사르가 있다. 단테는 그 위대한 영혼들 곁에 "홀로 떨어져 있는 살라딘(Saladino)"을 그려 넣었다. 가톨릭 신앙의 시인이 한 무슬림 정복자를 고대 현인들과 나란히 둔 것이다. 더욱 의미심장한 것은, 같은 단테가 예언자 무함마드는 지옥의 깊은 골짜기에 두었다는 점이다. 한 시인의 마음속에서 이슬람은 단죄받았으나, 살라딘 개인은 구원에 가장 가까운 이교도로 추앙되었다.</p>
+<p class="src">[Source] 단테 알리기에리, 『신곡』 「지옥편」 IV곡 129행.</p></div>
+
+<div class="aside-story"><h5>곁가지 2 — 월터 스콧이 빚은 동방의 군주</h5>
+<p>1825년 스코틀랜드 작가 월터 스콧은 제3차 십자군을 배경으로 한 소설 『부적(The Talisman)』을 발표했다. 이 소설에서 살라딘은 변장한 의사 '알 하킴'으로 등장해 병든 리처드를 치료하고, 뒤늦게 정체를 드러낸다. 스콧은 살라딘을 지혜롭고 관대하며 기품 있는 동방 군주로, 오히려 거칠고 충동적인 리처드보다 더 매력적으로 그렸다. 이 소설은 19세기 유럽에 '고결한 사라센'이라는 살라딘 이미지를 굳혔고, 그 인상은 후대의 영화 — 리들리 스콧 감독의 「킹덤 오브 헤븐」(2005) — 에까지 이어진다. 다만 이런 낭만화는 실제 살라딘을 이상화한 면이 있어, 역사가들은 문학 속 살라딘과 사료 속 살라딘을 구분할 것을 권한다.</p>
+<p class="src">[Source] Walter Scott, *The Talisman*(1825); 십자군 수용사 연구 일반.</p></div>
+
+<div class="aside-story"><h5>곁가지 3 — 아랍 민족주의가 되찾은 영웅</h5>
+<p>흥미롭게도 살라딘은 죽은 뒤 수백 년간 아랍 세계에서 그다지 크게 기념되지 않았다. 맘루크와 오스만 시대에는 다른 영웅들이 더 추앙받았다. 살라딘이 '이슬람의 위대한 해방자'로 다시 떠오른 것은 오히려 근대, 곧 유럽 제국주의에 맞서던 19세기 말과 20세기였다. 빌헬름 2세의 무덤 헌정이 역설적으로 그의 명성을 되살렸고, 이후 아랍 민족주의 지도자들이 그를 '서구에 맞선 통일의 상징'으로 호명했다. 이집트의 나세르는 자신을 살라딘에 빗댔고, 그의 얼굴은 여러 아랍 국가의 지폐와 우표, 국장(國章)에 새겨졌다. 한 영웅의 명성이 그의 사후가 아니라 칠백 년 뒤의 정치적 필요에 의해 재발견된 셈이다.</p>
+<p class="src">[Source] A.-M. Eddé, *Saladin*(2008), 수용사 장; 근대 아랍 민족주의 연구.</p></div>
+
+<div class="aside-story"><h5>곁가지 4 — 쿠르드의 아들, 사담의 가면</h5>
+<p>살라딘은 쿠르드족이었으나 생전에 자신의 쿠르드 정체성을 내세우지 않았고, 아랍·이슬람 세계의 술탄으로 살았다. 그러나 현대 쿠르드 민족운동은 그를 가장 큰 민족 영웅으로 끌어안았다. 이라크 북부의 한 주(州)는 그의 이름을 따 '살라딘 주'라 불린다. 동시에 같은 티크리트 출신인 사담 후세인은 자신을 살라딘의 재현으로 선전하며 동상과 벽화를 곳곳에 세웠다. 그러나 사담은 정작 살라딘의 동족인 쿠르드족을 화학무기로 학살했다(1988년 할라브자). 자비로 적의 존경을 산 살라딘과, 잔혹으로 동족의 증오를 산 사담 — 한 도시가 낳은 두 인물의 대비는, 역사적 정통성을 빌려 오는 일이 얼마나 공허할 수 있는가를 보여 준다.</p>
+<p class="src">[Source] 현대 이라크·쿠르드 정치사; 1988 할라브자 사건 기록.</p></div>
+
+<div class="aside-story"><h5>곁가지 5 — 오늘의 교훈 · 승리한 자의 품격</h5>
+<p>살라딘이 천 년의 시간을 건너 우리에게 남기는 가르침은, 결국 '이긴 자가 진 자를 어떻게 다루는가'에 있다. 첫째, 자비는 약함이 아니라 가장 멀리 가는 전략이다. 1099년의 학살은 두 세기에 걸친 증오를 낳았고, 1187년의 자비는 천 년에 걸친 존경을 낳았다. 적을 짓밟는 승리는 다음 전쟁의 씨앗이 되지만, 적을 존중하는 승리는 다음 평화의 토대가 된다. 둘째, 통합은 인내의 다른 이름이다. 그는 진짜 적과 싸우기 위해 먼저 같은 편을 묶는 데 십이 년을 견뎠다. 눈앞의 비난을 견디며 토대를 다지는 긴 호흡, 그것이 결정적 순간의 폭발력을 만들었다. 우리가 누군가에게 승리를 거두었을 때, 그를 어떻게 대하는가가 우리 자신의 평판을 천 년 동안 결정한다는 것 — 그것이 한 쿠르드 술탄이 남긴 마지막 메시지다.</p>
+<p class="src">[Source] 본 페이지 전체의 사료를 종합한 해석.</p></div>
+
+<div class="world-context"><h5>서구의 기억</h5><p>중세 유럽은 자신들이 패배한 적장을 오히려 기사도의 화신으로 신화화했다. 살라딘은 보카치오의 『데카메론』에도 너그러운 군주로 등장하며, 서구 문학이 '명예로운 이방인'을 상상하는 원형이 되었다.</p>
+<h5>이슬람의 기억</h5><p>현대 이슬람 세계에서 살라딘은 '예루살렘의 해방자'이자 분열을 넘어선 통합의 상징으로 거듭 호명된다. 그의 이름은 정치적 정당성을 구하는 이들이 가장 즐겨 빌려 오는 이름 가운데 하나로 남아 있다.</p></div>
+</article>
+
+</main>
+
+<footer class="epilogue"><h2>Aliquid memoriae</h2>
+<p>한 추방자의 수레에서 시작된 인생이, 갈가리 찢긴 이슬람 세계를 한 폭으로 묶고, 피의 학살로 빼앗겼던 성도를 피 없이 되찾는 데에 이르렀습니다.</p>
+<p>그러나 그가 후세에 남긴 가장 깊은 자취는 정복의 지도가 아니라 하나의 태도였습니다. 이긴 자가 진 자에게 베푼 자비, 적조차 인정한 신의, 그리고 평생 무일푼으로 끝맺은 청빈입니다. 그를 가장 미워할 이유가 많았던 유럽이 그를 영웅으로 기억한다는 사실이, 그 태도의 무게를 증명합니다. 천 년의 세월과 종교의 벽을 넘어, 한 인간의 자비가 어떻게 영원한 명예가 되는지를 그는 조용히 보여 주었습니다.</p>
+<div class="sources">
+<b>주 사료 (당대·이슬람)</b>
+바하 알딘 이븐 샤다드, 『술탄의 행적에 관한 진귀한 기록(al-Nawādir al-Sulṭāniyya, 약 1228)』 · 이마드 알딘 알이스파하니의 종군 기록 · 이븐 알아시르, 『완전한 역사(al-Kāmil fī al-Tārīkh)』 · 알마크리지의 후대 이집트사.
+<br><br>
+<b>비-이슬람·교차 사료</b>
+윌리엄 오브 티레의 연대기 · 『순례자 여정기(Itinerarium Peregrinorum)』 · 단테, 『신곡』 「지옥편」 IV · 보카치오 『데카메론』 · Walter Scott, *The Talisman*(1825).
+<br><br>
+<b>현대 학술</b>
+M. C. Lyons & D. E. P. Jackson, *Saladin: The Politics of the Holy War*(1982) · Anne-Marie Eddé, *Saladin*(2008) · Hannes Möhring, *Saladin: The Sultan and His Times*(2008) · S. Lane-Poole, *Saladin*(1898) · B. Hamilton, *The Leper King and His Heirs*(2000).
+</div></footer>
+
+</body></html>
